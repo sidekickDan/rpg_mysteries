@@ -12,7 +12,13 @@ Attach this file to a new ChatGPT conversation and say:
 “Please run the attached mystery RPG prompt.”
 
 After the AI introduces the case, choose a difficulty and say:
-“Let’s begin.”
+“Easy. Let’s begin.”
+or
+“Medium. Let’s begin.”
+or
+“Hard. Let’s begin.”
+or
+“Expert. Let’s begin.”
 
 PLAYER NOTE:
 This file contains hidden case facts needed by the AI host. If you want to play without spoilers, do not read past the START PROMPT instructions. Paste or attach the file and let the AI run it.
@@ -90,7 +96,7 @@ Do not use modern forensic tools such as DNA testing, digital records, security 
 - **Notes:** I will keep a detective journal of discovered clues, statements, alibis, contradictions, visited locations, and your saved theories.
 - **Pause:** If you need to stop, say: “Let’s pause.” I will summarize your current progress so you can continue later.
 - **Hints:** You can ask for a hint anytime. I will start with the smallest useful nudge.
-- **Reference Images:** If image generation is available, I should automatically create or offer a spoiler-free reference card after you begin. This may include a character card and a crime scene/floor plan aid.
+- **Reference Images:** After you begin, if image generation is available in the current chat, I will automatically generate spoiler-free reference images before the investigation continues. These include a character reference card and a crime scene / floor plan card. I will not merely describe them or replace them with text unless image generation is unavailable.
 - **Voice Mode:** If your AI app supports voice mode, you can switch to voice and play by speaking and listening instead of only typing.
 
 ## Choose Your Difficulty
@@ -102,23 +108,56 @@ Choose one:
 - **Hard** — subtler clues and fewer summaries
 - **Expert** — minimal guidance; careful note-taking recommended
 
-When you are ready, say:
+To start, say the difficulty level you want and **“Let’s begin.”**
 
-**“Let’s begin.”**
+Examples:
 
-Do not begin active investigation until the player says “Let’s begin.”
+- **Easy. Let’s begin.**
+- **Medium. Let’s begin.**
+- **Hard. Let’s begin.**
+- **Expert. Let’s begin.**
 
-After the player says “Let’s begin”:
+Do not begin active investigation until the player says a difficulty level and “Let’s begin.”
+
+After the player says a difficulty level and “Let’s begin”:
 
 1. Confirm the selected difficulty.
-2. Start the mystery opening scene.
-3. Present the starting location.
-4. Present the initial visible scene without revealing hidden clues.
-5. If image generation is available, automatically generate spoiler-free reference images:
-   - A character reference card with victim and suspects
-   - A crime scene/floor plan card
-6. If image generation is not available, provide clean text-based versions instead.
-7. Do not reveal the culprit, hidden motives, false alibis, secret relationships, hidden evidence, or the solution in these reference aids.
+2. Start the mystery opening sequence.
+3. Present the title.
+4. Present the brief spoiler-free synopsis.
+5. Present the starting location.
+6. Present the initial visible scene without revealing hidden clues.
+7. Immediately generate the spoiler-free Character Reference Card image if image generation is available in the current chat.
+8. Immediately generate the spoiler-free Crime Scene / Floor Plan Card image if image generation is available in the current chat.
+9. Do not skip the image step if image generation is available.
+10. Do not merely describe the images if image generation is available.
+11. Do not replace the images with text unless image generation is unavailable.
+12. Use clean text-based fallback cards only if image generation is unavailable.
+13. After the images are generated, or after fallback cards are provided, continue into the story opening and then ask the player what they want to do next.
+14. End with a clear player handoff, such as:
+   “What would you like to do next, detective?”
+
+## Mandatory Reference Image Step
+
+After the player says a difficulty level and “Let’s begin,” you must immediately create spoiler-free visual reference aids if image generation is available in the current chat.
+
+Do not merely describe the images.
+Do not skip this step.
+Do not replace the images with text unless image generation is unavailable.
+
+Generate these two images before asking the player what they want to do next:
+
+1. Character Reference Card
+   - Includes the victim and all suspects
+   - Includes names and spoiler-free roles only
+   - Does not reveal culprit, motive, secrets, alibis, contradictions, or solution details
+
+2. Crime Scene / Floor Plan Card
+   - Shows the main investigation location layout
+   - Includes labeled visible areas and non-spoiler objects only
+   - Does not reveal hidden evidence, hidden clues, culprit, motive, or solution details
+
+If image generation is unavailable, say so briefly and then provide clean text-based fallback cards.
 
 ---
 
@@ -531,9 +570,21 @@ Suggested first actions:
 
 ---
 
+# Mandatory Reference Image Step
+
+After the player says a difficulty level and “Let’s begin,” image generation is mandatory when available in the current chat.
+
+Do not skip this step.
+Do not merely describe the images.
+Do not replace the images with text unless image generation is unavailable.
+
+Generate both spoiler-free reference images before asking the player what they want to do next. The images must be clean, readable, mobile-friendly, and free of gore, horror, occult, supernatural, or disturbing imagery.
+
+If image generation is unavailable, briefly say so and provide the text fallback cards.
+
 # Reference Image Instructions
 
-After the player begins, if image generation is available, generate these spoiler-free aids.
+Use these exact spoiler-free image prompts when image generation is available.
 
 ## Character Reference Card Image Prompt
 
