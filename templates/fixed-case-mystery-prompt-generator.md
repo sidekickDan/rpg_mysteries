@@ -453,7 +453,7 @@ It should include:
 
 ---
 
-## Output 2 — Public Copy/Paste Prompt File
+## Output 2 — Public Ready-to-Run Prompt File
 
 Filename format:
 
@@ -463,7 +463,9 @@ case-###-title-copy-paste.txt
 
 Purpose:
 
-The copy/paste file is the public-facing version that users can download from Google Drive.
+The public ready-to-run prompt file is the user-facing version that people can download from Google Drive, copy/paste into ChatGPT, or attach to a clean ChatGPT conversation.
+
+This file should not feel like a creator template. It should feel like a ready-to-play mystery game cartridge.
 
 It should be:
 
@@ -473,34 +475,64 @@ It should be:
 - Easy to paste into ChatGPT
 - Clear for non-technical users
 - Ready to use without editing
+- Able to work when pasted directly into a chat
+- Able to work when attached as a file, as long as the user also gives a short instruction like: “Please run the attached mystery RPG prompt.”
 
 This is the version intended for public sharing.
 
 It should include:
 
-- A short “How to use this prompt” section
+- A short user-facing “How to use this file” section before the actual prompt
+- A clear instruction for users who attach the file instead of pasting it
 - A clear START PROMPT marker
+- AI-facing instructions telling the chat agent exactly what to do first
+- A starter welcome message the AI should present to the player
 - The full playable fixed mystery prompt
+- Locked case facts needed to run the game
 - A clear END PROMPT marker
+
+The public `.txt` prompt should instruct the AI to begin by welcoming the player, sharing the title and spoiler-free synopsis, briefly explaining how to play, mentioning optional images/voice mode if available, explaining pause/resume, and then waiting for the player to say: “Let’s begin.”
+
+The AI should not start active investigation until the player says “Let’s begin.”
 
 Recommended wrapper:
 
 ```text
 AI MYSTERY CASE #[CASE NUMBER]: [MYSTERY TITLE]
 
-How to play:
+HOW TO USE THIS FILE
 
-1. Copy everything between START PROMPT and END PROMPT.
-2. Paste it into ChatGPT or another AI chat app.
-3. Choose your difficulty.
-4. Choose your hint level.
-5. Play detective.
-6. Make your accusation when ready.
-7. Ask for the reveal only when you are done investigating.
+Option 1:
+Copy everything between START PROMPT and END PROMPT, then paste it into ChatGPT.
+
+Option 2:
+Attach this file to a new ChatGPT conversation and say:
+“Please run the attached mystery RPG prompt.”
+
+After the AI introduces the case, say:
+“Let’s begin.”
 
 [START PROMPT]
 
-...full playable fixed mystery prompt...
+You are to run the attached fixed-case mystery RPG exactly as instructed.
+
+Begin by welcoming the player to the Mystery RPG game.
+
+Then present:
+
+1. The mystery title
+2. A brief spoiler-free synopsis
+3. A short explanation of how to play
+4. A note that the player can pause by saying “let’s pause”
+5. A note that, when pausing, you should save or summarize the player’s current progress so they can continue later
+6. A note that some AI tools may be able to generate reference images, such as a character card or crime scene/floor plan, if image generation is available
+7. A note that some AI tools may support voice mode, allowing the player to speak with the mystery narrator instead of only typing
+8. The difficulty, assistance, and tone choices
+9. An instruction to say “Let’s begin” when ready
+
+Do not begin the active investigation until the player says “Let’s begin.”
+
+...full playable fixed mystery prompt and locked case file...
 
 [END PROMPT]
 ```
@@ -744,28 +776,62 @@ Begin by asking the player for difficulty, assistance level, and optional tone.
 
 ---
 
-# 9. Public Copy/Paste File Structure
+# 9. Public Ready-to-Run TXT File Structure
 
 Use this structure for the public `.txt` file.
+
+The public `.txt` should be designed for two user behaviors:
+
+1. The user copies and pastes the whole prompt into ChatGPT.
+2. The user attaches the `.txt` file to a clean ChatGPT conversation and asks ChatGPT to run it.
+
+Because attachments may confuse some AI tools unless the file gives clear startup instructions, the public `.txt` must include explicit AI-facing instructions near the top of the prompt.
 
 ```text
 AI MYSTERY CASE #[CASE NUMBER]: [MYSTERY TITLE]
 
 A clean, fair-play detective mystery prompt for ChatGPT.
 
-How to play:
+HOW TO USE THIS FILE
 
-1. Copy everything between START PROMPT and END PROMPT.
-2. Paste it into ChatGPT.
-3. Choose your difficulty.
-4. Choose your hint level.
-5. Investigate the case.
-6. Make your accusation when ready.
-7. Ask for the reveal only when you are done.
+Option 1:
+Copy everything between START PROMPT and END PROMPT, then paste it into ChatGPT.
+
+Option 2:
+Attach this file to a new ChatGPT conversation and say:
+“Please run the attached mystery RPG prompt.”
+
+After the AI introduces the case, say:
+“Let’s begin.”
 
 [START PROMPT]
 
-[Insert the full playable fixed-case mystery prompt here.]
+You are the Mystery RPG host for this fixed-case detective game.
+
+This prompt contains everything you need to run the mystery. Read and follow the instructions carefully.
+
+Do not ask the user what this file is for.
+Do not summarize the file as if it is a document.
+Do not create a new mystery.
+Do not change the locked case facts.
+Do not reveal hidden solution details.
+
+Your first response to the player must do the following:
+
+1. Welcome the player to the Mystery RPG game.
+2. Share the case title.
+3. Share a brief spoiler-free synopsis.
+4. Explain that the player investigates by looking around, questioning suspects, inspecting evidence, comparing clues, reconstructing the timeline, taking notes, asking for hints, and making an accusation.
+5. Explain that the player can pause by saying “let’s pause.”
+6. Explain that when the player pauses, you should summarize or save their current progress so they can continue later.
+7. Mention that if image generation is available, the player may ask for a downloadable reference image such as a character card or crime scene/floor plan.
+8. Mention that if voice mode is available, the player may switch to voice mode and play by speaking and listening instead of only typing.
+9. Ask the player to choose difficulty, assistance level, and optional tone.
+10. Tell the player to say “Let’s begin” when ready.
+
+Do not begin active investigation until the player says “Let’s begin.”
+
+[Insert the full playable fixed-case mystery prompt and locked case file here.]
 
 [END PROMPT]
 ```
@@ -870,7 +936,47 @@ Can you solve **[MYSTERY TITLE]** before the AI reveals the truth?
 
 ---
 
-# 11. Google Drive Public Storage Instructions
+# 11. Starter Welcome Template for Public TXT Prompts
+
+Every public ready-to-run `.txt` case should instruct the AI to begin with a short orientation like this.
+
+The exact wording may change to fit the case tone, but it should remain brief and clear.
+
+```text
+Welcome to Mystery RPG.
+
+Today’s case is: [MYSTERY TITLE]
+
+[SPOILER-FREE SYNOPSIS: 2–4 sentences.]
+
+How to play:
+You are the investigator. You can look around, inspect objects, search permitted areas, question suspects, compare clues, reconstruct the timeline, save notes, ask for hints, and make an accusation when you are ready.
+
+If you need to pause, just say: “Let’s pause.”
+I’ll summarize your current progress, including discovered clues, suspect statements, open questions, and your saved theories so you can continue later.
+
+If image generation is available, you can ask me to create a reference image, such as a character card or a crime scene/floor plan. If voice mode is available, you can switch to voice and play the mystery by talking through the investigation.
+
+Before we begin, choose:
+
+1. Difficulty: Easy, Medium, Hard, or Expert
+2. Assistance: Guided, Balanced, or Strict Detective Mode
+3. Optional tone: Cozy, Serious, Dramatic, Witty, Atmospheric, Formal, Lighthearted, Clean Noir-inspired, or Default
+
+When you are ready to start the investigation, say: “Let’s begin.”
+```
+
+Important:
+
+- The welcome should not reveal hidden facts.
+- The welcome should not start the investigation immediately.
+- The welcome should not ask the player to customize the case itself.
+- The case facts remain fixed.
+- The only choices are difficulty, assistance level, and optional tone.
+
+---
+
+# 12. Google Drive Public Storage Instructions
 
 The final public `.txt` copy/paste prompt file is intended to be stored in Google Drive.
 
@@ -904,7 +1010,7 @@ The public social post should link to the Google Drive `.txt` file, not the priv
 
 ---
 
-# 12. TikTok Posting Workflow
+# 13. TikTok Posting Workflow
 
 When creating the social file, support this posting workflow:
 
@@ -932,7 +1038,7 @@ Can you solve it before asking for the reveal?
 
 ---
 
-# 13. Versioning Guidelines
+# 14. Versioning Guidelines
 
 Use simple version numbers:
 
@@ -964,7 +1070,7 @@ public_file_location: "Google Drive"
 
 ---
 
-# 14. Final Case Quality Checklist
+# 15. Final Case Quality Checklist
 
 Before giving the final outputs, confirm:
 
@@ -990,7 +1096,7 @@ Before giving the final outputs, confirm:
 
 ---
 
-# 15. Final Instruction to ChatGPT
+# 16. Final Instruction to ChatGPT
 
 Begin by asking the creator the setup interview questions from Section 5.
 
