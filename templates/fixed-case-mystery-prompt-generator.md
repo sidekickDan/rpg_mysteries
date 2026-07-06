@@ -15,7 +15,7 @@ For every finished case, generate four outputs:
 1. **Master Case File** — Markdown `.md`
 2. **Public Copy/Paste Prompt File** — plain text `.txt`
 3. **Social Media Description File** — Markdown `.md`
-4. **Social Promo Image Prompts** — vertical and square promotional image prompts for the creator’s social media use
+4. **Social Promo Image Prompts** — two separate promotional image prompts for the creator’s social media use: one square image and one vertical portrait image
 
 The finished public prompt should allow a player to copy, paste, upload, or attach the prompt to ChatGPT and play the mystery as the investigator.
 
@@ -650,7 +650,7 @@ case-###-title-promo-images.md
 
 Purpose:
 
-The social promo image prompts file gives the creator two image prompts for advertising the mystery case.
+The social promo image prompts file gives the creator two separate image prompts for advertising the mystery case.
 
 These are for creator/social media use only.
 
@@ -658,10 +658,16 @@ They are not in-game reference cards.
 
 They should not be included as required gameplay images in the public `.txt` cartridge.
 
-Include:
+Include **two separate independent image prompts**:
 
-1. A vertical 9:16 promo image prompt
-2. A square 1:1 promo image prompt
+1. A square **1:1** promo image prompt
+2. A vertical portrait **4:5** promo image prompt
+
+Important:
+- These must be created as **two separate final images**.
+- Do **not** combine both layouts into one image.
+- Do **not** create a collage, diptych, split panel, side-by-side graphic, or multi-layout poster.
+- Each prompt should request exactly **one** image in its own format.
 
 Each promo image prompt should include:
 
@@ -1201,8 +1207,10 @@ Can you solve **[MYSTERY TITLE]** before the AI reveals the truth?
 
 Include:
 
-1. Vertical 9:16 promo image prompt
-2. Square 1:1 promo image prompt
+1. Square 1:1 promo image prompt
+2. Vertical portrait 4:5 promo image prompt
+
+These must be two separate image prompts for two separate final images.
 
 These images are for social media advertising only, not gameplay reference.
 
@@ -1423,17 +1431,21 @@ They are marketing/advertisement images only.
 
 They should be included in the social media description output or in a separate `case-###-title-promo-images.md` file.
 
-Create both:
+Create both as **two separate image prompts**:
 
-1. **Vertical Promo Image Prompt**
-   - Best for TikTok, Instagram Reels, YouTube Shorts, and mobile stories
-   - Recommended aspect ratio: 9:16
-   - Should include the case number, case title, brand/series name, short hook, and brief how-to-play text
-
-2. **Square Promo Image Prompt**
+1. **Square Promo Image Prompt**
    - Best for Instagram grid, Facebook posts, profile pages, and general sharing
-   - Recommended aspect ratio: 1:1
+   - Required aspect ratio: **1:1**
+   - This prompt must generate **one square image only**
    - Should include the case number, case title, brand/series name, short hook, and brief how-to-play text
+
+2. **Vertical Portrait Promo Image Prompt**
+   - Best for Instagram portrait posts, Pinterest-style layouts, and vertical social sharing
+   - Required aspect ratio: **4:5**
+   - This prompt must generate **one vertical portrait image only**
+   - Should include the case number, case title, brand/series name, short hook, and brief how-to-play text
+
+Do not combine the square and vertical versions into one graphic.
 
 ## Promo Image Content Requirements
 
@@ -1457,6 +1469,17 @@ Choose your difficulty.
 Follow the clues.
 Solve the case.
 ```
+
+## Promo Image Separation Rule
+
+The generated case must clearly instruct the AI or image tool to create **two separate promotional images**:
+
+- one square image at **1:1**
+- one vertical portrait image at **4:5**
+
+Do not combine both formats into a single image.
+Do not place two posters on one canvas.
+Do not output a comparison layout, collage, or split design.
 
 ## Promo Image Style Requirements
 
@@ -1485,10 +1508,15 @@ Promo images may use atmospheric, non-spoiler visuals, but they must not include
 
 Promo images are promotional only. They are not authoritative gameplay references.
 
-## Vertical Promo Image Prompt Template
+## Vertical Portrait Promo Image Prompt Template
 
 ```text
-Create a vertical 9:16 promotional image for Hidden Trail Mysteries, a clean interactive mystery RPG series from Hidden Trail Games.
+Create one separate vertical portrait 4:5 promotional image for Hidden Trail Mysteries, a clean interactive mystery RPG series from Hidden Trail Games.
+
+Important:
+This prompt should produce one vertical portrait image only.
+Do not combine this with a square version.
+Do not create multiple posters on one canvas.
 
 Brand text:
 Hidden Trail Mysteries
@@ -1517,7 +1545,12 @@ hiddentrailmysterygames@gmail.com
 ## Square Promo Image Prompt Template
 
 ```text
-Create a square 1:1 promotional image for Hidden Trail Mysteries, a clean interactive mystery RPG series from Hidden Trail Games.
+Create one separate square 1:1 promotional image for Hidden Trail Mysteries, a clean interactive mystery RPG series from Hidden Trail Games.
+
+Important:
+This prompt should produce one square image only.
+Do not combine this with a vertical version.
+Do not create multiple posters on one canvas.
 
 Brand text:
 Hidden Trail Mysteries
@@ -1669,8 +1702,9 @@ Before giving the final outputs, confirm:
 - [ ] Hidden Trail Games and the tagline appear in the generated public prompt where appropriate.
 - [ ] The brand contact email appears in metadata, public prompt wrapper, social file, and reference table prompts.
 - [ ] The TikTok captions and hashtags are ready to use.
-- [ ] The vertical social promo image prompt is included.
 - [ ] The square social promo image prompt is included.
+- [ ] The vertical portrait 4:5 social promo image prompt is included.
+- [ ] The generator clearly says these must be two separate final images.
 - [ ] Social promo image prompts are spoiler-free and not treated as gameplay references.
 - [ ] The public `.txt` welcome tells the user to start by saying a difficulty level plus “Let’s begin,” such as “Easy. Let’s begin.”
 - [ ] After reference cards are generated or provided, the AI automatically begins the story and ends with a clear player handoff.
