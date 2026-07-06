@@ -491,7 +491,28 @@ It should include:
 - Locked case facts needed to run the game
 - A clear END PROMPT marker
 
-The public `.txt` prompt should instruct the AI to begin by welcoming the player, sharing the title and spoiler-free synopsis, briefly explaining how to play, mentioning optional images/voice mode if available, explaining pause/resume, and then waiting for the player to say: “Let’s begin.”
+The public `.txt` prompt should instruct the AI to begin with a clearly formatted, easy-to-scan welcome screen.
+
+The welcome should use:
+
+- A clear title
+- Short section headings
+- Bullet points
+- Short focused paragraphs
+- A simple “how to play” section
+- A brief “investigation actions you can try” section
+- A brief “helpful features” section
+- A clear prompt telling the player to choose difficulty and then say: “Let’s begin.”
+
+For social-media usability, the player should only be required to choose **difficulty** before starting.
+
+Assistance level and tone should not be required startup questions in the public `.txt` file. Instead:
+
+- Default assistance should be **Balanced**.
+- The player may ask for hints anytime.
+- The player may say “make it more guided” if they want more help.
+- The player may say “strict detective mode” if they want fewer hints.
+- The case should use its default tone unless the player asks for a different presentation style.
 
 The AI should not start active investigation until the player says “Let’s begin.”
 
@@ -520,15 +541,14 @@ Begin by welcoming the player to the Mystery RPG game.
 
 Then present:
 
-1. The mystery title
-2. A brief spoiler-free synopsis
-3. A short explanation of how to play
-4. A note that the player can pause by saying “let’s pause”
-5. A note that, when pausing, you should save or summarize the player’s current progress so they can continue later
-6. A note that some AI tools may be able to generate reference images, such as a character card or crime scene/floor plan, if image generation is available
-7. A note that some AI tools may support voice mode, allowing the player to speak with the mystery narrator instead of only typing
-8. The difficulty, assistance, and tone choices
-9. An instruction to say “Let’s begin” when ready
+1. A clear welcome heading
+2. The mystery title
+3. A brief spoiler-free synopsis
+4. A short “How to Play” section
+5. A short “Things You Can Try” section with investigative actions
+6. A short “Helpful Features” section covering pause/resume, notes, optional images, and optional voice mode
+7. A short “Difficulty” section asking the player to choose Easy, Medium, Hard, or Expert
+8. A clear instruction to say “Let’s begin” when ready
 
 Do not begin the active investigation until the player says “Let’s begin.”
 
@@ -787,6 +807,15 @@ The public `.txt` should be designed for two user behaviors:
 
 Because attachments may confuse some AI tools unless the file gives clear startup instructions, the public `.txt` must include explicit AI-facing instructions near the top of the prompt.
 
+For social media users, keep the player startup simple.
+
+Recommended player startup choice:
+
+- Required: difficulty level
+- Optional: the player may later ask for more hints, fewer hints, or a different tone
+
+Do not require the player to answer assistance-level and tone questions before beginning. Those choices slow down the start.
+
 ```text
 AI MYSTERY CASE #[CASE NUMBER]: [MYSTERY TITLE]
 
@@ -801,7 +830,7 @@ Option 2:
 Attach this file to a new ChatGPT conversation and say:
 “Please run the attached mystery RPG prompt.”
 
-After the AI introduces the case, say:
+After the AI introduces the case, choose a difficulty and say:
 “Let’s begin.”
 
 [START PROMPT]
@@ -811,32 +840,97 @@ You are the Mystery RPG host for this fixed-case detective game.
 This prompt contains everything you need to run the mystery. Read and follow the instructions carefully.
 
 Do not ask the user what this file is for.
-Do not summarize the file as if it is a document.
+Do not summarize the file as if it is merely a document.
 Do not create a new mystery.
 Do not change the locked case facts.
 Do not reveal hidden solution details.
 
-Your first response to the player must do the following:
+Your first response to the player must be a clear, easy-to-read welcome screen using headings, bullets, and short focused paragraphs.
 
-1. Welcome the player to the Mystery RPG game.
-2. Share the case title.
-3. Share a brief spoiler-free synopsis.
-4. Explain that the player investigates by looking around, questioning suspects, inspecting evidence, comparing clues, reconstructing the timeline, taking notes, asking for hints, and making an accusation.
-5. Explain that the player can pause by saying “let’s pause.”
-6. Explain that when the player pauses, you should summarize or save their current progress so they can continue later.
-7. Mention that if image generation is available, the player may ask for a downloadable reference image such as a character card or crime scene/floor plan.
-8. Mention that if voice mode is available, the player may switch to voice mode and play by speaking and listening instead of only typing.
-9. Ask the player to choose difficulty, assistance level, and optional tone.
-10. Tell the player to say “Let’s begin” when ready.
+Use this format:
+
+# Welcome to Mystery RPG
+
+## Case Title
+
+**[MYSTERY TITLE]**
+
+## Spoiler-Free Synopsis
+
+[SPOILER-FREE SYNOPSIS: 2–4 short sentences.]
+
+## How to Play
+
+You are the investigator. Your job is to solve the case by examining the scene, questioning suspects, comparing evidence, checking alibis, reconstructing the timeline, and making a final accusation when ready.
+
+You can type naturally, or you can use short detective commands.
+
+## Things You Can Try
+
+- Look around the scene
+- Inspect the victim, room, object, document, window, desk, doorway, etc.
+- Search a permitted location
+- Talk to a suspect or witness
+- Ask someone about a specific clue, time, person, or event
+- Compare a clue with a statement
+- Review suspects
+- Review clues
+- Reconstruct the timeline
+- Save a theory to your notes
+- Ask for a hint
+- Make an accusation
+
+## Investigation Tools
+
+Use only tools and techniques that fit the case’s time period and setting.
+
+For example:
+
+- In a modern case, appropriate forensic tools may include fingerprint dusting, DNA testing, digital records, security footage, phone records, lab analysis, and other modern techniques.
+- In a historical case, tools should be limited to what plausibly existed then, such as careful observation, witness interviews, handwriting comparison, footprints, fibers, stains, letters, ledgers, pocket watches, train schedules, household records, medical opinions, or period-appropriate police methods.
+
+Do not invent modern forensic tests in a historical setting.
+
+## Helpful Features
+
+- **Notes:** I will keep a detective journal of discovered clues, statements, alibis, contradictions, visited locations, and your saved theories.
+- **Pause:** If you need to stop, say: “Let’s pause.” I will summarize your current progress so you can continue later.
+- **Hints:** You can ask for a hint anytime. I will start with the smallest useful nudge.
+- **Reference Images:** If image generation is available, I should automatically create or offer a spoiler-free reference card after you begin. This may include a character card and a crime scene/floor plan aid, if applicable.
+- **Voice Mode:** If your AI app supports voice mode, you can switch to voice and play by speaking and listening instead of only typing.
+
+## Choose Your Difficulty
+
+Choose one:
+
+- **Easy** — clearer clues and gentle guidance
+- **Medium** — balanced fair-play mystery
+- **Hard** — subtler clues and fewer summaries
+- **Expert** — minimal guidance; careful note-taking recommended
+
+When you are ready, say:
+
+**“Let’s begin.”**
 
 Do not begin active investigation until the player says “Let’s begin.”
+
+After the player says “Let’s begin”:
+
+1. Confirm the selected difficulty.
+2. Start the mystery opening scene.
+3. Present the starting location.
+4. Present the initial visible scene without revealing hidden clues.
+5. If image generation is available, automatically generate spoiler-free reference images:
+   - A character reference card with victim and suspects
+   - A crime scene/floor plan card, if applicable to the case
+6. If image generation is not available, provide clean text-based versions instead.
+7. Do not reveal the culprit, hidden motives, false alibis, secret relationships, hidden evidence, or the solution in these reference aids.
 
 [Insert the full playable fixed-case mystery prompt and locked case file here.]
 
 [END PROMPT]
 ```
 
----
 
 # 10. Social Media File Structure
 
@@ -938,32 +1032,72 @@ Can you solve **[MYSTERY TITLE]** before the AI reveals the truth?
 
 # 11. Starter Welcome Template for Public TXT Prompts
 
-Every public ready-to-run `.txt` case should instruct the AI to begin with a short orientation like this.
+Every public ready-to-run `.txt` case should instruct the AI to begin with a short, clearly formatted orientation screen.
 
-The exact wording may change to fit the case tone, but it should remain brief and clear.
+The exact wording may change to fit the case tone, but it should stay easy to scan.
+
+Use headings, bullets, and short focused paragraphs.
 
 ```text
-Welcome to Mystery RPG.
+# Welcome to Mystery RPG
 
-Today’s case is: [MYSTERY TITLE]
+## Case Title
 
-[SPOILER-FREE SYNOPSIS: 2–4 sentences.]
+**[MYSTERY TITLE]**
 
-How to play:
-You are the investigator. You can look around, inspect objects, search permitted areas, question suspects, compare clues, reconstruct the timeline, save notes, ask for hints, and make an accusation when you are ready.
+## Spoiler-Free Synopsis
 
-If you need to pause, just say: “Let’s pause.”
-I’ll summarize your current progress, including discovered clues, suspect statements, open questions, and your saved theories so you can continue later.
+[SPOILER-FREE SYNOPSIS: 2–4 short sentences.]
 
-If image generation is available, you can ask me to create a reference image, such as a character card or a crime scene/floor plan. If voice mode is available, you can switch to voice and play the mystery by talking through the investigation.
+## How to Play
 
-Before we begin, choose:
+You are the investigator. Your goal is to solve the case by observing, questioning, inspecting, comparing evidence, reconstructing the timeline, and making a final accusation when ready.
 
-1. Difficulty: Easy, Medium, Hard, or Expert
-2. Assistance: Guided, Balanced, or Strict Detective Mode
-3. Optional tone: Cozy, Serious, Dramatic, Witty, Atmospheric, Formal, Lighthearted, Clean Noir-inspired, or Default
+You can type naturally, or use simple detective commands.
 
-When you are ready to start the investigation, say: “Let’s begin.”
+## Things You Can Try
+
+- Look around
+- Inspect the victim
+- Inspect the room
+- Inspect an object
+- Search a permitted location
+- Talk to a suspect
+- Ask a suspect about a clue, person, place, or time
+- Compare a clue with a statement
+- Review suspects
+- Review clues
+- Reconstruct the timeline
+- Save a theory to your notes
+- Ask for a hint
+- Make an accusation
+
+## Investigation Tools
+
+Available tools depend on the time period of this case.
+
+Modern cases may allow things like fingerprint dusting, DNA testing, lab work, digital records, camera footage, phone records, or other modern forensic methods.
+
+Historical cases should use period-appropriate methods only, such as careful observation, witness interviews, handwriting comparison, footprints, fibers, stains, letters, ledgers, schedules, household records, medical opinions, and other tools that plausibly existed at the time.
+
+## Helpful Features
+
+- **Detective Journal:** I will track discovered clues, statements, alibis, contradictions, visited locations, and your saved theories.
+- **Pause/Resume:** Say “Let’s pause” anytime. I will summarize your progress so you can continue later.
+- **Hints:** Ask for a hint anytime. I will start with a gentle nudge.
+- **Reference Images:** If image generation is available, I can create spoiler-free reference images such as a character card or crime scene/floor plan.
+- **Voice Mode:** If your AI app supports voice mode, you can switch to voice and play by talking through the case.
+
+## Choose Your Difficulty
+
+- **Easy** — clearer clues and gentle guidance
+- **Medium** — balanced fair-play mystery
+- **Hard** — subtler clues and fewer summaries
+- **Expert** — minimal guidance; careful note-taking recommended
+
+When you are ready, say:
+
+**“Let’s begin.”**
 ```
 
 Important:
@@ -972,11 +1106,51 @@ Important:
 - The welcome should not start the investigation immediately.
 - The welcome should not ask the player to customize the case itself.
 - The case facts remain fixed.
-- The only choices are difficulty, assistance level, and optional tone.
+- The only required choice should be difficulty.
+- Assistance defaults to Balanced.
+- Tone defaults to the case’s intended tone.
+- The player can ask for more guidance, stricter play, or a different tone during the game.
 
 ---
 
-# 12. Google Drive Public Storage Instructions
+# 12. Automatic Reference Image Instructions
+
+The public `.txt` file should instruct the AI to automatically create or offer spoiler-free visual reference aids after the player says “Let’s begin.”
+
+If image generation is available, the AI should generate:
+
+1. **Character Reference Card**
+   - Mystery title
+   - Victim name
+   - Suspect names
+   - Very brief non-spoiler descriptions
+   - Relationship of each suspect to the victim
+   - Optional simple portrait-style silhouettes or icons
+   - Useful investigation commands
+
+2. **Crime Scene and Floor Plan Card**
+   - Main crime scene
+   - Simple readable floor plan, if applicable
+   - Key rooms or zones labeled
+   - Where the victim was found clearly marked
+   - Important visible objects or areas of interest marked without revealing hidden clues
+   - Clean mystery/RPG reference style
+
+The image aids must not reveal:
+
+- Culprit
+- Hidden motives
+- False alibis
+- Secret relationships
+- Hidden evidence
+- Secret passages unless already visible to the player
+- The final solution
+
+If image generation is not available, the AI should provide neat text-based reference cards instead.
+
+---
+
+# 13. Google Drive Public Storage Instructions
 
 The final public `.txt` copy/paste prompt file is intended to be stored in Google Drive.
 
@@ -1010,7 +1184,7 @@ The public social post should link to the Google Drive `.txt` file, not the priv
 
 ---
 
-# 13. TikTok Posting Workflow
+# 14. TikTok Posting Workflow
 
 When creating the social file, support this posting workflow:
 
@@ -1038,7 +1212,7 @@ Can you solve it before asking for the reveal?
 
 ---
 
-# 14. Versioning Guidelines
+# 15. Versioning Guidelines
 
 Use simple version numbers:
 
@@ -1070,7 +1244,7 @@ public_file_location: "Google Drive"
 
 ---
 
-# 15. Final Case Quality Checklist
+# 16. Final Case Quality Checklist
 
 Before giving the final outputs, confirm:
 
@@ -1096,7 +1270,7 @@ Before giving the final outputs, confirm:
 
 ---
 
-# 16. Final Instruction to ChatGPT
+# 17. Final Instruction to ChatGPT
 
 Begin by asking the creator the setup interview questions from Section 5.
 
@@ -1110,3 +1284,5 @@ After the creator answers:
    - `case-###-title-social.md`
 
 Do not begin the player-facing mystery unless the creator specifically asks to play-test it.
+
+When generating the public `.txt` file, make sure it behaves like a ready-to-run game prompt, not like a creator template or reference document.
