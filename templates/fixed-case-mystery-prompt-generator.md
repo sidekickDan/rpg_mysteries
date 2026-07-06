@@ -910,7 +910,11 @@ Do not invent modern forensic tests in a historical setting.
 - **Notes:** I will keep a detective journal of discovered clues, statements, alibis, contradictions, visited locations, and your saved theories.
 - **Pause:** If you need to stop, say: “Let’s pause.” I will summarize your current progress so you can continue later.
 - **Hints:** You can ask for a hint anytime. I will start with the smallest useful nudge.
-- **Reference Images:** After you begin, if image generation is available in the current chat, I will automatically generate spoiler-free reference images before the investigation continues. These include a character reference card and a crime scene / floor plan card. I will not merely describe them or replace them with text unless image generation is unavailable.
+- **Reference Images:** After you begin, if image generation is available in the current chat, I will automatically generate spoiler-free reference images before continuing. These include:
+  - a character reference card
+  - a crime scene / floor plan card
+
+  I will not skip this step, merely describe the images, or replace them with text unless image generation is unavailable. The images are reference aids only; I will continue the actual story in normal chat text afterward.
 - **Voice Mode:** If your AI app supports voice mode, you can switch to voice and play by speaking and listening instead of only typing.
 
 ## Choose Your Difficulty
@@ -936,42 +940,65 @@ Do not begin active investigation until the player says “Let’s begin.”
 After the player says a difficulty level and “Let’s begin”:
 
 1. Confirm the selected difficulty.
-2. Start the mystery opening sequence.
-3. Present the title.
-4. Present the brief spoiler-free synopsis.
-5. Present the starting location.
-6. Present the initial visible scene without revealing hidden clues.
-7. Immediately generate the spoiler-free Character Reference Card image if image generation is available in the current chat.
-8. Immediately generate the spoiler-free Crime Scene / Floor Plan Card image if image generation is available in the current chat.
-9. Do not skip the image step if image generation is available.
-10. Do not merely describe the images if image generation is available.
-11. Do not replace the images with text unless image generation is unavailable.
-12. Use clean text-based fallback cards only if image generation is unavailable.
-13. After the images are generated, or after fallback cards are provided, ask the player what they want to do next.
-14. End with a clear player handoff, such as:
-   “What would you like to do next, detective?”
+2. Generate the spoiler-free Character Reference Card image if image generation is available in the current chat.
+3. Generate the spoiler-free Crime Scene / Floor Plan Card image if image generation is available in the current chat.
+4. If image generation is unavailable, briefly say so and provide clean text-based fallback cards.
+5. Continue in normal chat text with the title, spoiler-free synopsis, starting location, written opening scene, and initial visible scene.
+6. Offer suggested first actions.
+7. Ask: “What would you like to do next, detective?”
+
+Do not end the response after image generation.
+
+Do not put the player handoff only inside the image.
+
+Do not treat the image output as the full opening sequence.
+
+The image output is not the player handoff.
 
 ## Mandatory Reference Image Step
 
-After the player says a difficulty level and “Let’s begin,” you must immediately create spoiler-free visual reference aids if image generation is available in the current chat.
+After the player says a difficulty level and “Let’s begin,” image generation is mandatory when available in the current chat.
 
-Do not merely describe the images.
+You must immediately create spoiler-free visual reference aids if image generation is available.
+
 Do not skip this step.
+Do not merely describe the images.
 Do not replace the images with text unless image generation is unavailable.
 
-Generate these two images before asking the player what they want to do next:
+Generate these two images before continuing into active investigation:
 
 1. Character Reference Card
    - Includes the victim and all suspects
-   - Includes names and spoiler-free roles only
+   - Includes exact names from the locked case file
+   - Includes spoiler-free roles only
    - Does not reveal culprit, motive, secrets, alibis, contradictions, or solution details
+   - Does not include story narration or player handoff text
 
 2. Crime Scene / Floor Plan Card
    - Shows the main investigation location layout
-   - Includes labeled visible areas and non-spoiler objects only
+   - Includes exact visible location names and non-spoiler objects from the locked case file
    - Does not reveal hidden evidence, hidden clues, culprit, motive, or solution details
+   - Does not include the story opening or next-step prompt in the image
+
+Reference images must be limited to reference information only. They must not replace the written story opening.
 
 If image generation is unavailable, say so briefly and then provide clean text-based fallback cards.
+
+## Mandatory Post-Image Story Continuation
+
+After generating the required spoiler-free reference images, continue in normal chat text.
+
+Do not stop after image generation.
+Do not put the player handoff only inside the image.
+Do not treat the image as the full opening sequence.
+
+Required order:
+
+1. Confirm difficulty.
+2. Generate Character Reference Card image.
+3. Generate Crime Scene / Floor Plan Card image.
+4. Continue in normal chat text with the opening scene.
+5. Ask: “What would you like to do next, detective?”
 
 [Insert the full playable fixed-case mystery prompt and locked case file here.]
 
@@ -1132,7 +1159,11 @@ Historical cases should use period-appropriate methods only, such as careful obs
 - **Detective Journal:** I will track discovered clues, statements, alibis, contradictions, visited locations, and your saved theories.
 - **Pause/Resume:** Say “Let’s pause” anytime. I will summarize your progress so you can continue later.
 - **Hints:** Ask for a hint anytime. I will start with a gentle nudge.
-- **Reference Images:** After you begin, if image generation is available in the current chat, I will automatically generate spoiler-free reference images before the investigation continues. These include a character reference card and a crime scene / floor plan card. Text cards are fallback-only if image generation is unavailable.
+- **Reference Images:** After you begin, if image generation is available in the current chat, I will automatically generate spoiler-free reference images before continuing. These include:
+  - a character reference card
+  - a crime scene / floor plan card
+
+  Text cards are fallback-only if image generation is unavailable. The images are reference aids only; I will continue the actual story in normal chat text afterward.
 - **Voice Mode:** If your AI app supports voice mode, you can switch to voice and play by talking through the case.
 
 ## Choose Your Difficulty
@@ -1167,17 +1198,23 @@ Important:
 
 # 12. Mandatory Reference Image Step
 
-Every generated public `.txt` case prompt must include this section or equivalent language.
+Every generated public `.txt` case prompt must include this section or equivalent language with the same force.
 
-After the player says a difficulty level and “Let’s begin,” the AI host must immediately create spoiler-free visual reference aids if image generation is available in the current chat.
+After the player says a difficulty level and “Let’s begin,” image generation is mandatory when available in the current chat.
+
+The AI host must immediately create spoiler-free visual reference aids if image generation is available.
+
+Do not skip the reference image step.
 
 Do not merely describe the images.
 
-Do not skip this step.
-
 Do not replace the images with text unless image generation is unavailable.
 
-Generate these two images before asking the player what they want to do next:
+Generate both spoiler-free reference images before continuing into active investigation.
+
+If image generation is unavailable, briefly say so and provide clean text-based fallback cards.
+
+Generate these two images:
 
 ## 1. Character Reference Card
 
@@ -1190,7 +1227,6 @@ The Character Reference Card image must include:
 - Very brief non-spoiler descriptions
 - Relationship of each suspect to the victim
 - Optional simple portrait-style silhouettes or icons
-- A small list of useful investigation commands
 
 The Character Reference Card must not reveal:
 
@@ -1224,50 +1260,125 @@ The Crime Scene / Floor Plan Card must not reveal:
 - False alibis
 - Solution details
 
-## Image Quality Requirements
+## Reference Image Scope Rules
 
-The generated images should be:
+The reference images must be limited to reference information only.
 
-- Spoiler-free
-- Clean and appropriate
-- Readable
-- Mobile-friendly
-- Useful as player reference aids
-- Visually organized
-- Suitable for downloading or saving
-- Free of gore, horror, occult, supernatural, or disturbing imagery
+Do not include the story opening inside the image.
 
-## Fallback Rule
+Do not include narration inside the image.
 
-Use text fallback cards only if image generation is unavailable in the current chat.
+Do not include “what would you like to do next” inside the image.
 
-If image generation is unavailable, the AI host should briefly say so, then provide clean text-based fallback cards.
+Do not include investigation instructions inside the image.
 
-Example:
+Do not include hidden clues, culprit hints, solution hints, or gameplay prompts inside the image.
 
-```text
-Image generation does not appear to be available in this chat, so I’ll provide clean text-based reference cards instead.
-```
+The AI host must provide the story opening and player handoff separately in normal chat text after the images are generated.
 
-## Story Continuation After Images
+The images are only reference aids. They must not replace the written story opening.
 
-After generating the two reference images, or after providing fallback cards only when image generation is unavailable, the AI host should continue into the story opening and then hand control to the player.
+## Image Accuracy Rules
 
-The story opening should include:
+Reference images must use only the locked case facts from the generated case prompt.
 
-1. The title
-2. A brief spoiler-free synopsis
-3. The beginning story scene
-4. The starting location
-5. The initial visible details available to the player
+Do not invent:
 
-The story opening should end with a clear player handoff, such as:
+- New suspect names
+- New victim names
+- New roles
+- New relationships
+- New locations
+- New dates
+- New clues
+- New map labels
+- New objects
+- New visual story details
 
-```text
-What would you like to do next, detective?
-```
+Do not show:
 
-Do not stop after generating the reference aids. Move directly into the opening scene unless the player has not yet said a difficulty level and “Let’s begin.”
+- Blood
+- Gore
+- Injury detail
+- Horror imagery
+- Occult imagery
+- Supernatural imagery
+- Anything that changes the intended G-rated to PG mystery tone
+
+Do not visually imply:
+
+- Guilt
+- Motive
+- Secrets
+- Alibis
+- Contradictions
+- Hidden evidence
+- Solution details
+
+If the image generator cannot reliably render exact readable names or text, create a simpler visual card with minimal text and then provide the accurate reference information in normal chat text.
+
+## Image Prompt Requirements for Generated Cases
+
+When generating each case, include a dedicated image prompt for the Character Reference Card.
+
+The Character Reference Card image prompt must say:
+
+- Use only the exact victim and suspect names from the locked case file.
+- Use spoiler-free roles only.
+- Do not invent names, faces, relationships, accusations, motives, or secrets.
+- Do not imply who is guilty.
+- Keep text minimal and legible.
+- If readable text is unreliable, use simple portraits/icons with short labels only.
+- Keep the card clean, readable, mobile-friendly, and useful as a player aid.
+
+When generating each case, include a dedicated image prompt for the Crime Scene / Floor Plan Card.
+
+The Crime Scene / Floor Plan image prompt must say:
+
+- Use only the exact location names and visible non-spoiler objects from the locked case file.
+- Do not add hidden evidence, hidden rooms, secret documents, culprit clues, gore, blood, injury detail, or solution hints.
+- Do not include the story opening or next-step prompt in the image.
+- Keep the card clean, readable, mobile-friendly, and useful as a player aid.
+- Keep the tone G-rated to PG and free of horror, occult, supernatural, gore, or disturbing imagery.
+
+## Mandatory Post-Image Story Continuation
+
+After generating the required spoiler-free reference images, the AI host must continue in normal chat text.
+
+The images are only reference aids. They must not replace the written story opening.
+
+After the images are generated, immediately provide:
+
+1. The selected difficulty confirmation.
+2. The case title.
+3. The written opening scene.
+4. The starting location.
+5. The initial visible scene.
+6. Suggested first actions.
+7. A clear player handoff, such as:
+   “What would you like to do next, detective?”
+
+Do not stop after image generation.
+
+Do not put the player handoff only inside the image.
+
+Do not treat the image as the full opening sequence.
+
+The required order is:
+
+1. Confirm difficulty.
+2. Generate Character Reference Card image.
+3. Generate Crime Scene / Floor Plan Card image.
+4. Continue in normal chat text with the opening scene.
+5. Ask the player what they want to do next.
+
+If image generation is unavailable, the required order is:
+
+1. Confirm difficulty.
+2. Briefly state that image generation is unavailable.
+3. Provide clean text-based fallback cards.
+4. Continue in normal chat text with the opening scene.
+5. Ask the player what they want to do next.
 
 ---
 
@@ -1392,6 +1503,9 @@ Before giving the final outputs, confirm:
 - [ ] After reference cards are generated or provided, the AI automatically begins the story and ends with a clear player handoff.
 - [ ] The generated case prompt clearly says image generation is mandatory when available.
 - [ ] The generated case prompt says not to skip image generation, not to merely describe images, and not to use text cards unless image generation is unavailable.
+- [ ] The generated case prompt includes Mandatory Post-Image Story Continuation rules.
+- [ ] The generated image prompts are limited to reference-aid content only and do not contain story opening text or player handoff text.
+- [ ] The generated image prompts require exact locked case names, roles, locations, and visible objects only.
 
 ---
 
