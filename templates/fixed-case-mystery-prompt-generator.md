@@ -22,6 +22,33 @@ The mystery must be fixed in advance. The victim, suspects, culprit, motive, met
 
 ---
 
+## Brand Identity
+
+All generated case files should use this brand identity unless the creator explicitly requests otherwise:
+
+```yaml
+brand_name: "Hidden Trail Games"
+series_name: "Hidden Trail Mysteries"
+tagline: "Every story leaves a trail."
+brand_contact_email: "hiddentrailmysterygames@gmail.com"
+brand_description: "Clean, interactive mystery RPGs you can play with any general-use AI. Just download the prompt, add it to your AI, and hit enter. Step into the case, question suspects, follow the clues, and uncover what everyone else missed."
+```
+
+Use the brand identity in:
+
+- The master case file metadata
+- The public `.txt` prompt wrapper
+- The welcome screen shown to the player
+- The character reference card image
+- The crime scene / floor plan card image
+- The social media description file
+- Optional Google Drive folder/file descriptions
+- Brand contact information sections
+
+Do not let the brand identity reveal or imply any hidden case solution details.
+
+---
+
 # 1. Project Goals
 
 Create fixed-case detective mysteries that are:
@@ -624,6 +651,10 @@ Use this structure for the master `.md` file.
 ## File Metadata
 
 ```yaml
+brand_name: "Hidden Trail Games"
+series_name: "Hidden Trail Mysteries"
+tagline: "Every story leaves a trail."
+brand_contact_email: "hiddentrailmysterygames@gmail.com"
 case_number: "[CASE NUMBER]"
 title: "[MYSTERY TITLE]"
 status: "draft"
@@ -825,9 +856,15 @@ Recommended player startup choice:
 Do not require the player to answer assistance-level and tone questions before beginning. Those choices slow down the start.
 
 ```text
+HIDDEN TRAIL MYSTERIES
+Every story leaves a trail.
+
+A clean, fair-play interactive mystery RPG from Hidden Trail Games.
+Contact: hiddentrailmysterygames@gmail.com
+
 AI MYSTERY CASE #[CASE NUMBER]: [MYSTERY TITLE]
 
-A clean, fair-play detective mystery prompt for ChatGPT.
+Clean, interactive mystery RPGs you can play with any general-use AI.
 
 HOW TO USE THIS FILE
 
@@ -863,7 +900,13 @@ Your first response to the player must be a clear, easy-to-read welcome screen u
 
 Use this format:
 
-# Welcome to Mystery RPG
+# Welcome to Hidden Trail Mysteries
+
+*Every story leaves a trail.*
+
+A clean, interactive mystery RPG from **Hidden Trail Games**.
+
+Contact: hiddentrailmysterygames@gmail.com
 
 ## Case Title
 
@@ -1011,7 +1054,29 @@ Required order:
 Use this structure for the social `.md` file.
 
 ```markdown
-# Case #[CASE NUMBER] Social Media Description
+# Hidden Trail Mysteries — Case #[CASE NUMBER] Social Media Description
+
+## Brand
+
+**Hidden Trail Games**
+
+## Series
+
+**Hidden Trail Mysteries**
+
+## Tagline
+
+**Every story leaves a trail.**
+
+## Contact
+
+hiddentrailmysterygames@gmail.com
+
+## Description
+
+Clean, interactive mystery RPGs you can play with any general-use AI. Just download the prompt, add it to your AI, and hit enter. Step into the case, question suspects, follow the clues, and uncover what everyone else missed.
+
+---
 
 ## Case Title
 
@@ -1113,7 +1178,13 @@ The exact wording may change to fit the case tone, but it should stay easy to sc
 Use headings, bullets, and short focused paragraphs.
 
 ```text
-# Welcome to Mystery RPG
+# Welcome to Hidden Trail Mysteries
+
+*Every story leaves a trail.*
+
+A clean, interactive mystery RPG from **Hidden Trail Games**.
+
+Contact: hiddentrailmysterygames@gmail.com
 
 ## Case Title
 
@@ -1220,6 +1291,10 @@ Generate these two images:
 
 The Character Reference Card image must include:
 
+- Hidden Trail Mysteries branding
+- Hidden Trail Games name, where space allows
+- Tagline: “Every story leaves a trail.”
+- Brand contact email in small, unobtrusive text: hiddentrailmysterygames@gmail.com
 - Mystery title
 - Victim name
 - All suspect names
@@ -1243,6 +1318,10 @@ The Character Reference Card must not reveal:
 
 The Crime Scene / Floor Plan Card image must include:
 
+- Hidden Trail Mysteries branding
+- Hidden Trail Games name, where space allows
+- Tagline: “Every story leaves a trail.”
+- Brand contact email in small, unobtrusive text: hiddentrailmysterygames@gmail.com
 - The main investigation location layout
 - A clean, readable floor plan if applicable
 - Labeled visible areas
@@ -1323,6 +1402,10 @@ When generating each case, include a dedicated image prompt for the Character Re
 
 The Character Reference Card image prompt must say:
 
+- Include the brand/series mark: Hidden Trail Mysteries.
+- Include the tagline where space allows: “Every story leaves a trail.”
+- Include Hidden Trail Games where space allows.
+- Include the brand contact email in small, unobtrusive text: hiddentrailmysterygames@gmail.com
 - Use only the exact victim and suspect names from the locked case file.
 - Use spoiler-free roles only.
 - Do not invent names, faces, relationships, accusations, motives, or secrets.
@@ -1335,6 +1418,10 @@ When generating each case, include a dedicated image prompt for the Crime Scene 
 
 The Crime Scene / Floor Plan image prompt must say:
 
+- Include the brand/series mark: Hidden Trail Mysteries.
+- Include the tagline where space allows: “Every story leaves a trail.”
+- Include Hidden Trail Games where space allows.
+- Include the brand contact email in small, unobtrusive text: hiddentrailmysterygames@gmail.com
 - Use only the exact location names and visible non-spoiler objects from the locked case file.
 - Do not add hidden evidence, hidden rooms, secret documents, culprit clues, gore, blood, injury detail, or solution hints.
 - Do not include the story opening or next-step prompt in the image.
@@ -1405,7 +1492,7 @@ AI-Mystery-Case-003-The-Vanishing-Violinist.txt
 Suggested Google Drive folder:
 
 ```text
-AI Mystery Prompts/
+Hidden Trail Mysteries/
 ├── Case 001 - The Clockmaker's Last Appointment.txt
 ├── Case 002 - The Lighthouse at Grayhaven Point.txt
 ├── Case 003 - The Vanishing Violinist.txt
@@ -1431,11 +1518,14 @@ When creating the social file, support this posting workflow:
 Example TikTok caption:
 
 ```text
-AI Mystery Case #[CASE NUMBER]: [MYSTERY TITLE]
+Hidden Trail Mysteries
+Every story leaves a trail.
 
-The victim, suspects, clues, and solution are already locked.
+Case #[CASE NUMBER]: [MYSTERY TITLE]
 
-Copy the prompt, paste it into ChatGPT, choose your difficulty, and play detective.
+Clean, interactive mystery RPGs you can play with any general-use AI. Download the prompt, add it to your AI, and hit enter.
+
+Step into the case, question suspects, follow the clues, and uncover what everyone else missed.
 
 Can you solve it before asking for the reveal?
 
@@ -1498,6 +1588,10 @@ Before giving the final outputs, confirm:
 - [ ] The final reveal explains the clue chain clearly.
 - [ ] The `.txt` copy/paste file is easy for users to understand.
 - [ ] The social description file is spoiler-free.
+- [ ] Hidden Trail Mysteries branding appears in the public welcome.
+- [ ] Hidden Trail Games and the tagline appear in the generated public prompt where appropriate.
+- [ ] The reference image prompts include spoiler-free Hidden Trail Mysteries branding.
+- [ ] The brand contact email appears in metadata, public prompt wrapper, social file, and reference image prompts.
 - [ ] The TikTok captions and hashtags are ready to use.
 - [ ] The public `.txt` welcome tells the user to start by saying a difficulty level plus “Let’s begin,” such as “Easy. Let’s begin.”
 - [ ] After reference cards are generated or provided, the AI automatically begins the story and ends with a clear player handoff.
