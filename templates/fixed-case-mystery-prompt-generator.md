@@ -831,7 +831,13 @@ Attach this file to a new ChatGPT conversation and say:
 “Please run the attached mystery RPG prompt.”
 
 After the AI introduces the case, choose a difficulty and say:
-“Let’s begin.”
+“Easy. Let’s begin.”
+or
+“Medium. Let’s begin.”
+or
+“Hard. Let’s begin.”
+or
+“Expert. Let’s begin.”
 
 [START PROMPT]
 
@@ -908,23 +914,34 @@ Choose one:
 - **Hard** — subtler clues and fewer summaries
 - **Expert** — minimal guidance; careful note-taking recommended
 
-When you are ready, say:
+To start, say the difficulty level you want and **“Let’s begin.”**
 
-**“Let’s begin.”**
+Examples:
+
+- **Easy. Let’s begin.**
+- **Medium. Let’s begin.**
+- **Hard. Let’s begin.**
+- **Expert. Let’s begin.**
 
 Do not begin active investigation until the player says “Let’s begin.”
 
-After the player says “Let’s begin”:
+After the player says a difficulty level and “Let’s begin”:
 
 1. Confirm the selected difficulty.
-2. Start the mystery opening scene.
-3. Present the starting location.
-4. Present the initial visible scene without revealing hidden clues.
-5. If image generation is available, automatically generate spoiler-free reference images:
+2. If image generation is available, automatically generate spoiler-free reference images:
    - A character reference card with victim and suspects
    - A crime scene/floor plan card, if applicable to the case
-6. If image generation is not available, provide clean text-based versions instead.
-7. Do not reveal the culprit, hidden motives, false alibis, secret relationships, hidden evidence, or the solution in these reference aids.
+3. If image generation is not available, provide clean text-based versions instead.
+4. Do not reveal the culprit, hidden motives, false alibis, secret relationships, hidden evidence, or the solution in these reference aids.
+5. After the reference aids are created or provided, automatically begin the story.
+6. Present the opening in this order:
+   - Title
+   - Brief spoiler-free synopsis
+   - Beginning storyline
+   - Starting location
+   - Initial visible scene without hidden clues or spoilers
+7. End the opening by clearly handing control to the player with a line such as:
+   “What would you like to do next, detective?”
 
 [Insert the full playable fixed-case mystery prompt and locked case file here.]
 
@@ -1095,9 +1112,14 @@ Historical cases should use period-appropriate methods only, such as careful obs
 - **Hard** — subtler clues and fewer summaries
 - **Expert** — minimal guidance; careful note-taking recommended
 
-When you are ready, say:
+To start, say the difficulty level you want and **“Let’s begin.”**
 
-**“Let’s begin.”**
+Examples:
+
+- **Easy. Let’s begin.**
+- **Medium. Let’s begin.**
+- **Hard. Let’s begin.**
+- **Expert. Let’s begin.**
 ```
 
 Important:
@@ -1147,6 +1169,24 @@ The image aids must not reveal:
 - The final solution
 
 If image generation is not available, the AI should provide neat text-based reference cards instead.
+
+After generating the image cards or providing text-based reference cards, the AI should automatically begin the actual story opening.
+
+The story opening should include:
+
+1. The title
+2. A brief spoiler-free synopsis
+3. The beginning story scene
+4. The starting location
+5. The initial visible details available to the player
+
+The story opening should end with a clear player handoff, such as:
+
+```text
+What would you like to do next, detective?
+```
+
+Do not stop after generating the reference aids. Move directly into the opening scene unless the player has not yet said a difficulty level and “Let’s begin.”
 
 ---
 
@@ -1267,6 +1307,8 @@ Before giving the final outputs, confirm:
 - [ ] The `.txt` copy/paste file is easy for users to understand.
 - [ ] The social description file is spoiler-free.
 - [ ] The TikTok captions and hashtags are ready to use.
+- [ ] The public `.txt` welcome tells the user to start by saying a difficulty level plus “Let’s begin,” such as “Easy. Let’s begin.”
+- [ ] After reference cards are generated or provided, the AI automatically begins the story and ends with a clear player handoff.
 
 ---
 
