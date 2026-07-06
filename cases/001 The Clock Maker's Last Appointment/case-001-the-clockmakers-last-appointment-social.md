@@ -8,7 +8,7 @@
 
 ## Short Hook
 
-The village clock chimed seven at 7:14—was it a mistake, or the killer's perfect alibi?
+Five visitors entered the clockmaker's world of ticking brass and quiet secrets — but only one kept the last appointment.
 
 ---
 
@@ -20,155 +20,166 @@ Can you solve **The Clockmaker's Last Appointment** before the AI reveals the tr
 
 ## Short Synopsis
 
-Bellwether's most trusted clockmaker is found dead in his workroom on the night he planned to announce the future of his shop. At first, it looks like a tragic accident among old clocks, pulleys, and tools. But the village's famous regulator clock chimed late, five people had reasons to visit Elias Whitcombe, and one appointment was never meant to be kept.
+In the village of Bellwether, Elias Whitcombe is found dead in his clock shop beneath a fallen demonstration weight. The village calls it a tragic accident, but the clocks do not agree.
+
+Five suspects had reason to see him that evening. One timepiece may be telling the truth. Another may be lying.
 
 ---
 
 ## TikTok Caption Options
 
-1. A cozy AI murder mystery you can play in ChatGPT. The clocks are ticking. Can you solve it?
-2. Case #001 is live: The Clockmaker's Last Appointment. Copy the prompt, paste it into ChatGPT, and play detective.
-3. The village clock chimed seven at 7:14. That's your first problem.
-4. Five suspects. One clockmaker. One impossible timeline. Can you solve the case?
-5. This mystery is fixed, fair-play, and spoiler-free until you ask for the reveal.
+1. A clockmaker is dead. Five suspects had appointments. One clock is six minutes wrong. Can you solve it?
+
+2. AI Mystery Case #001: The Clockmaker's Last Appointment. Copy the prompt, paste it into ChatGPT, and play detective.
+
+3. This is a fixed-case mystery: the culprit, clues, and solution are already locked. No random guessing. Just deduction.
+
+4. Bellwether's most trusted clockmaker is gone — and the village clocks cannot agree on when it happened.
+
+5. Can you solve the mystery before asking ChatGPT for the reveal?
 
 ---
 
 ## TikTok On-Screen Text Ideas
 
-- The clock chimed seven at 7:14.
-- Can you solve this AI murder mystery?
-- Five suspects. One false timeline.
-- Copy the prompt. Paste into ChatGPT. Play detective.
-- Case #001: The Clockmaker's Last Appointment
-- The solution is locked before you begin.
-- Don't ask for the reveal too early.
+- "A clockmaker is dead."
+- "Five suspects."
+- "One stopped watch."
+- "Six missing minutes."
+- "Can you solve it?"
+- "Copy the prompt. Paste into ChatGPT. Play detective."
+- "The solution is already locked."
+- "No spoilers. No random ending. Fair-play mystery."
 
 ---
 
 ## TikTok Voiceover Script Options
 
-### Option 1
+### Voiceover 1 — Short
 
-This is Case #001: The Clockmaker's Last Appointment. A village clockmaker is found dead in his workroom, and everyone thinks it was an accident. But the famous shop clock chimed at the wrong time, and five people had a reason to lie. Copy the prompt, paste it into ChatGPT, and see if you can solve it before asking for the reveal.
+A respected clockmaker is found dead in his workshop. Everyone thinks a clock weight fell by accident — until one watch stops at the wrong time. Five people visited him that evening. One of them is lying. Copy the prompt, paste it into ChatGPT, and see if you can solve **The Clockmaker's Last Appointment**.
 
-### Option 2
+### Voiceover 2 — Atmospheric
 
-Want to play detective in ChatGPT? This mystery is clean, fixed, and fair-play. The AI already knows the culprit and the clues, but it won't reveal the truth unless you earn it. Your job is to question suspects, inspect the clock shop, build the timeline, and make your accusation.
+In Bellwether, every clock was trusted because Elias Whitcombe kept them true. But on the night before his biggest announcement, Elias is found dead among his own machines. The village believes it was an accident. The evidence says otherwise. Your job is to question the suspects, inspect the shop, compare the clocks, and accuse the right person.
 
-### Option 3
+### Voiceover 3 — Direct Challenge
 
-The victim was a clockmaker. The clue is time. But which clock is telling the truth? Try Case #001, The Clockmaker's Last Appointment, and comment who you accused.
+This is AI Mystery Case #001: **The Clockmaker's Last Appointment**. The victim, suspects, clues, and solution are fixed before you begin. Play it in ChatGPT and comment who you accused before asking for the reveal.
 
 ---
 
 ## Short Post Description
 
-A clean, cozy, fair-play detective RPG prompt for ChatGPT. Investigate a village clockmaker's mysterious death, question five suspects, inspect the shop, and solve the timeline before asking for the reveal.
+A clean, fair-play detective mystery you can play in ChatGPT. Investigate a late-1800s English clock shop, question five suspects, compare clues, and solve the case.
 
 ---
 
 ## Longer Post Description
 
-**The Clockmaker's Last Appointment** is a fixed-case AI detective mystery you can play in ChatGPT. The victim, suspects, clues, culprit, motive, method, and final solution are already locked before the game begins. That means the AI should not change the mystery to match your guesses.
+**The Clockmaker's Last Appointment** is a clean, fixed-case detective mystery RPG designed to be played in ChatGPT.
 
-Copy the prompt, paste it into ChatGPT, choose your difficulty and hint level, and begin investigating. You can inspect locations, question suspects, compare clues, keep notes, ask for hints, and make a formal accusation when you're ready.
+The case is already locked before you begin: victim, suspects, clues, red herrings, timeline, and solution. You play as the investigator. Look around the clock shop, question suspects, inspect evidence, compare the timepieces, take notes, ask for hints if needed, and make your formal accusation when ready.
 
-Can you solve the case before the final reveal?
+No gore, no occult, no horror, no random ending — just a cozy, atmospheric whodunit built for fair-play deduction.
 
 ---
 
 ## Pinned Comment Options
 
-1. Copy the prompt from the link, paste it into ChatGPT, and comment who you accused—no spoilers!
-2. Play tip: don't trust the timeline too quickly.
-3. Keep your suspect theories spoiler-free so others can play too.
+1. Copy the prompt from the link, paste it into ChatGPT, choose your difficulty, and say: "Let's begin."
+
+2. Play fair: investigate first, accuse later. Comment who you suspected — but please avoid spoilers.
+
+3. The solution is locked from the start. If your AI changes the culprit, restart with the prompt and remind it to follow the fixed case facts.
 
 ---
 
 ## Call-to-Action Options
 
-- Copy the prompt and play detective.
-- Comment your first suspect.
+- Copy the prompt and play the mystery tonight.
+- Comment your first suspect before you ask for the reveal.
 - Save this for your next cozy mystery night.
-- Try it on Medium first, then replay on Hard.
-- Tag someone who thinks they could solve this.
+- Try it in voice mode for a narrated detective experience.
+- Ask your AI to create a spoiler-free character card or floor plan before you begin.
 
 ---
 
 ## Hashtag Sets
 
-### General Mystery
+### General Mystery Hashtags
 
-#mysterygame #detectivegame #whodunit #murdermystery #mysterylovers #logicpuzzle #canyousolveit
+#mysterygame #detectivegame #whodunit #canyousolveit #cozymystery #mysterychallenge
 
-### AI Prompt
+### AI Prompt Hashtags
 
-#chatgptprompt #aigame #aiprompt #chatgptgame #promptengineering #aitools #interactivefiction
+#chatgptprompt #aigame #aistorygame #interactivefiction #promptengineering #aitools
 
-### Cozy Mystery
+### Cozy Mystery Hashtags
 
-#cozymystery #cleanmystery #detectivestory #mysteryrpg #storygame #puzzlegame
+#cozymystery #cleanmystery #detectivestory #logicpuzzle #mysterynight #storygame
 
-### Engagement
+### Engagement Hashtags
 
-#solvewithme #guesstheculprit #commentyoursuspect #mysterychallenge #brainteaser
+#commentyourguess #solvethis #guesstheculprit #mysterytok #booktokmystery #puzzletok
 
 ### Recommended Mix
 
-#mysterygame #chatgptprompt #detectivegame #canyousolveit #whodunit #aigame #logicpuzzle #cozymystery
+#mysterygame #chatgptprompt #detectivegame #canyousolveit #whodunit #aigame #cozymystery #logicpuzzle
 
 ---
 
 ## Spoiler-Free Reveal Post Template
 
-**Spoiler warning for Case #001: The Clockmaker's Last Appointment**
+**Spoiler warning for AI Mystery Case #001: The Clockmaker's Last Appointment**
 
 Before the reveal, ask yourself:
 
-1. Which clock did you trust?
-2. Who had access to the workroom?
-3. Which alibi depends on the timing?
-4. Which suspect had both motive and opportunity?
-5. Which clue made your theory click?
+1. Which timepiece did you trust?
+2. Which suspect's alibi depended on timing?
+3. Which clue proved the scene was staged?
+4. Which suspect had motive, method, and opportunity?
 
-Reveal format:
-- Restate the public premise.
-- Warn again that spoilers are coming.
-- Explain the key deduction without revealing it in the first few seconds.
-- Reveal the culprit.
-- Explain the clue chain.
-- Invite viewers to comment whether they solved it.
+In the reveal video, explain the logic chain without mocking wrong guesses. Show how the fair clues pointed to the solution.
 
-Do not use this template publicly until enough players have had a chance to play.
+Do not reveal the culprit in the caption unless the post is clearly marked as a spoiler reveal.
 
 ---
 
 ## Public Prompt Intro
 
-Download or copy **AI Mystery Case #001: The Clockmaker's Last Appointment** and paste it into ChatGPT. Choose your difficulty, inspect the clock shop, question the suspects, and solve the case before asking the AI for the reveal.
+Ready to play?
+
+Download or copy **AI Mystery Case #001: The Clockmaker's Last Appointment**. Paste it into ChatGPT, choose your difficulty, and say:
+
+"Let's begin."
+
+You are the investigator. The clocks are waiting.
 
 ---
 
 ## Notes for Creator
 
 Safe to mention publicly:
-- The title
-- The clockmaker shop setting
-- The late 1800s English village tone
-- The five suspects
-- The fact that the case involves a suspicious timeline
-- The case is clean, fixed, and fair-play
-- The player can inspect, question, take notes, ask for hints, and accuse
 
-Do not publicly reveal:
+- Title
+- Setting: late-1800s English village clock shop
+- Victim: Elias Whitcombe, clockmaker
+- Five suspects
+- The death looks like an accident
+- The mystery involves timing, clocks, appointments, and alibis
+- It is clean, fair-play, fixed-case, and suitable for G-PG play
+- Players can ask for a character card or floor plan if their AI supports image generation
+- Players can use voice mode if available
+
+Do not reveal publicly without a spoiler warning:
+
 - Culprit
 - Motive
 - Method
 - True time of death
-- Final clue
-- Ledger secret
+- The timeline trick
+- Final clue chain
+- Secret ledger issue
 - Which alibi breaks
-- How the clock timing works
-- Hidden evidence
-- Full solution
+- Any hidden evidence
