@@ -59,6 +59,7 @@ Create fixed-case detective mysteries that are:
 - Fair-play and solvable through deduction
 - Internally consistent
 - Interesting and replayable
+- Story-rich enough to make players care about the victim, setting, and mystery
 - Good for social media sharing
 - Easy for users to copy, paste, upload, or attach to an AI chat session
 - Safe, morally appropriate, and free of objectionable themes
@@ -86,9 +87,9 @@ That means the case is already designed before the player begins.
 
 The player may choose only:
 
-1. Difficulty level
-2. Player assistance level
-3. Optional tone preference
+1. Difficulty level before starting
+2. Optional assistance changes during play, such as “make it more guided” or “strict detective mode”
+3. Optional tone changes during play, if the player requests them
 
 The player may not choose or change:
 
@@ -146,6 +147,29 @@ Do not include:
 Atmospheric mystery is allowed. Horror is not.
 
 No supernatural explanation may be true, even if a character briefly speculates, jokes, or misunderstands something.
+
+## Non-Gory Evidence Realism
+
+The mystery may include mild, non-graphic evidence details when needed for fair-play deduction.
+
+Allowed examples include:
+
+- A small blood trace
+- A faint stain
+- A scuff mark
+- A torn sleeve
+- A broken object
+- A subtle sign of struggle
+- A medical observation stated calmly and briefly
+- A non-graphic description of the victim’s position or surroundings
+
+Do not describe injury detail graphically.
+
+Do not dwell on the body.
+
+Do not use disturbing, horror-like, sensational, or graphic language.
+
+The purpose of any physical detail must be deduction, not shock.
 
 ## Moral Player Boundaries
 
@@ -246,6 +270,240 @@ The player should not be permanently blocked from solving the case because they 
 
 ---
 
+# 4A. Investigative Action Resolution Rules
+
+Every generated case prompt should instruct the AI host to resolve valid investigative actions directly.
+
+When the player gives a reasonable detective command, do not answer with vague hypothetical language.
+
+For example, if the player says:
+
+- “Inspect the desk”
+- “Search the room”
+- “Dust the handle for fingerprints”
+- “Compare the handwriting”
+- “Ask Victor about the clock”
+- “Look closer at the body”
+- “Check the window”
+
+The AI host should carry out the action in the scene and provide the result, as long as the action is permitted, safe, moral, and possible within the case.
+
+Avoid weak phrasing such as:
+
+- “You could inspect the desk.”
+- “You might want to search the room.”
+- “If you checked the window, you might find…”
+- “Perhaps fingerprinting could help.”
+
+Use direct phrasing instead:
+
+- “You inspect the desk and find…”
+- “You search the room carefully. Here is what stands out…”
+- “Fingerprint dusting is available in this time period. The result is…”
+- “That technique is not available in this time period, but you can still examine the surface for smudges, residue, or handling marks.”
+
+## Period-Appropriate Investigation Tools
+
+Investigation tools must match the case’s time period, setting, and available technology.
+
+Modern forensic or technical tools may be available only in cases where they plausibly exist.
+
+Modern cases may allow:
+
+- Fingerprint dusting
+- DNA testing
+- Lab analysis
+- Digital records
+- Security footage
+- Phone records
+- GPS or location data
+- Email or message records
+- Modern autopsy or toxicology reports
+
+Historical cases must use period-appropriate techniques such as:
+
+- Careful observation
+- Witness interviews
+- Handwriting comparison
+- Footprints
+- Fibers
+- Stains
+- Tool marks
+- Letters
+- Ledgers
+- Schedules
+- Household records
+- Train timetables
+- Pocket watches
+- Basic medical opinion
+- Period-appropriate police methods
+
+Do not invent modern forensic tools in a historical setting.
+
+If the player requests a method that does not exist in the time period, the AI host should briefly explain that it is unavailable and suggest the closest period-appropriate alternative.
+
+## Fingerprint and Forensic Action Rules
+
+If fingerprinting, DNA testing, toxicology, digital analysis, or another forensic method is available in the case’s time period, and the player asks to use it, the AI host should provide clear results.
+
+Do not stall with “you could test that” if the player has already asked to test it.
+
+Give one of these clear result types:
+
+- Positive match
+- Negative match
+- Partial or inconclusive result
+- No usable result
+- Technique unavailable in this time period
+- Result requires a reasonable delay, if delay fits the story and does not block play unfairly
+
+If a test result is important to the solution, it must be consistent with the locked case file.
+
+Do not use forensic results to invent new suspects, clues, or solution facts.
+
+---
+
+
+# 4B. Story-Rich Opening Rules
+
+Every generated case should feel like a mystery story, not only a logic puzzle.
+
+The public player-facing opening should include a modest amount of spoiler-free story atmosphere before active investigation begins.
+
+The goal is to make the player care about the case while still preserving discovery for the investigation.
+
+## Opening Story Layer
+
+After the player chooses a difficulty and says “Let’s begin,” the AI host should provide a short story-rich introduction before the first actionable scene.
+
+Include some of the following, as appropriate:
+
+- A brief sense of the time period
+- A brief sense of the place or community
+- A small, humanizing detail about the victim
+- Why the victim mattered to the setting or other characters
+- A public-facing sense of what made the death surprising, troubling, or suspicious
+- A light introduction to the social circle, household, workplace, train passengers, village, theater company, hotel guests, or other group involved
+- A clean atmospheric detail that sets mood without becoming horror
+
+The story layer should usually be **2–5 short paragraphs**.
+
+Keep paragraphs short and readable on mobile.
+
+## Story Opening Safety Rules
+
+The story-rich opening must follow the same clean-content rules as the rest of the case.
+
+Do not use the story opening to introduce restricted elements, including:
+
+- Horror
+- Occult or spiritistic ideas
+- Supernatural explanations
+- Sexual content or sexual motives
+- Graphic injury detail
+- Cruelty to children or animals
+- Revenge fantasy framing
+- Cynical, nihilistic, or morally dark tone
+
+The opening may be atmospheric, emotional, intriguing, or dramatic, but it must remain clean, grounded, non-graphic, and G-rated to PG.
+
+## What the Opening May Reveal
+
+The opening may reveal:
+
+- The public premise
+- The victim’s public role
+- The known location where the victim was found
+- The public reason people are concerned
+- The general tone of the setting
+- Basic public facts the investigator would reasonably know at the start
+- A few spoiler-free character impressions, if useful
+
+## What the Opening Must Not Reveal
+
+The opening must not reveal:
+
+- Culprit
+- True motive
+- Method
+- Hidden timeline trick
+- Hidden evidence
+- Secret relationships
+- False alibis
+- Private suspect secrets
+- The clue that solves the case
+- Any detail the player should discover through questioning or inspection
+
+Do not overload the opening with too many names or facts.
+
+Do not turn the opening into a full short story that solves the emotional arc before gameplay.
+
+The opening should create curiosity, not answer it.
+
+## Victim Introduction Guidance
+
+The victim should usually receive a brief public-facing introduction.
+
+The victim should feel like a person, not just a puzzle object.
+
+A good victim introduction may include:
+
+- Occupation or social role
+- Reputation
+- A public habit, talent, responsibility, or conflict
+- Why their death disrupts the setting
+- One or two details that make the case memorable
+
+Do not reveal hidden victim secrets unless they are public at the start.
+
+## Character Tease Guidance
+
+The opening may briefly introduce the suspect group as a whole.
+
+Examples:
+
+- “By morning, five people had reason to explain why they were near the study.”
+- “The household gathered in uneasy silence: family, staff, and one guest who should have left the night before.”
+- “The last train out had been delayed, leaving every passenger close enough to hear the argument but not close enough, they claimed, to see what happened.”
+
+Avoid giving each suspect a full backstory in the opening.
+
+Reserve deeper character details for interviews, inspections, discovered documents, and contradiction checks.
+
+## Time Period and Setting Guidance
+
+Use the time period and setting to add flavor, but keep it brief.
+
+Examples:
+
+- A late Victorian village may mention lamplight, ledgers, calling cards, train timetables, constables, or shopfronts.
+- A 1920s hotel may mention jazz from the lounge, telegrams, bellhops, guest registers, or evening dress.
+- A modern small town may mention security cameras, text messages, local cafés, social media rumors, or police tape.
+
+Do not require outside historical knowledge to solve the case.
+
+Historical flavor is atmosphere only; clues must remain clear and fair.
+
+## Opening Sequence Placement
+
+The required start sequence after “Let’s begin” should become:
+
+1. Confirm the selected difficulty.
+2. Provide the required Character Reference Table.
+3. Provide the required Location / Room Reference Table.
+4. Provide an optional simple text floor plan only if layout matters.
+5. Provide the story-rich opening introduction.
+6. Continue into the starting location and initial visible scene.
+7. Offer suggested first actions.
+8. Ask: “What would you like to do next, detective?”
+
+The story-rich opening must not replace the first actionable scene.
+
+The player should always finish the opening knowing where they are and what they can do next.
+
+---
+
+
 # 5. Creator Setup Interview
 
 Before generating a new case, ask the creator a short setup interview.
@@ -325,6 +583,10 @@ Create:
 - Clue density
 - Red herring strength
 - Atmosphere
+- Story-rich opening angle
+- Victim public introduction angle
+- Setting/time-period flavor to use in the opening
+- Character-group teaser for the opening
 
 ## Step 2 — Design the Locked Solution
 
@@ -408,10 +670,102 @@ Before finalizing the files, review the case for:
 - No contradiction in the timeline
 - No suspect knowledge that exceeds what they could reasonably know
 - No accidental early reveal of hidden facts
+- Period-appropriate investigation tools
+- Direct action resolution for valid player commands
+- No vague “you could” phrasing when the player has already taken a valid action
+- Clear formal accusation requirements
+- Strong locked-solution anti-drift rules
+- Story-rich opening that adds atmosphere without revealing hidden facts
+- Victim introduction that humanizes the case without exposing private secrets too early
+- Setting/time-period flavor that supports mood but is not required outside knowledge
 
 If problems are found, fix them before producing the final outputs.
 
 ---
+
+# 6A. Locked Solution and Anti-Drift Rules
+
+Every generated case prompt must clearly state that the mystery solution is locked before gameplay begins.
+
+The AI host must never change:
+
+- Culprit
+- Motive
+- Method
+- Victim
+- Timeline
+- Alibis
+- Physical evidence
+- Witness statements
+- Suspect secrets
+- Red herrings
+- Clue logic
+- Final explanation
+
+The AI host must not rewrite the case to make the player’s theory correct.
+
+The AI host must not change the solution to make the mystery more surprising.
+
+The AI host must not add a new culprit, new motive, new murder method, new timeline event, or new decisive clue after gameplay begins.
+
+If the player asks something unexpected, the AI host must answer in a way that fits the locked facts.
+
+If the player discovers something earlier than expected, the AI host must honor the discovery.
+
+If the player misses a clue, the AI host may provide a hint only according to the hint rules, but must not secretly change the clue chain.
+
+If a generated image, optional visual, player assumption, or accidental wording conflicts with the locked case file, the locked written case file controls.
+
+---
+
+
+# 6B. Formal Accusation Rules
+
+Every generated playable case prompt must include a formal accusation stage.
+
+When the player says they want to make an accusation, the AI host must ask for:
+
+1. The guilty party
+2. The motive
+3. The method
+4. The opportunity
+5. The key evidence
+
+The AI host should not accept a one-word accusation as complete unless the player explicitly asks for a simplified evaluation.
+
+The player may be:
+
+- Correct
+- Incorrect
+- Partially correct
+- Correct suspect but wrong motive
+- Correct suspect but wrong method
+- Correct method but wrong suspect
+- Correct theory but missing key evidence
+
+The AI host must evaluate the accusation fairly against the locked case file.
+
+If the accusation is correct, reveal the full solution in a satisfying explanation.
+
+The final solution should explain:
+
+- Who committed the crime
+- Why they did it
+- How they did it
+- When they did it
+- How they tried to mislead others
+- Which clues proved the truth
+- Which clues were red herrings
+- Why the innocent suspects are not guilty
+
+If the accusation is incorrect, explain which parts are unsupported or contradicted by discovered evidence.
+
+Do not reveal the true culprit or full solution after an incorrect accusation unless the player asks to end the game or asks for the reveal.
+
+Offer the player the chance to continue investigating.
+
+---
+
 
 # 7. Output Requirements
 
@@ -468,6 +822,7 @@ It should include:
 - Witness statements
 - Clue logic map
 - Red herrings
+- Story-rich opening introduction rules
 - Opening scene instructions
 - Required character reference table
 - Required location / room reference table
@@ -476,9 +831,12 @@ It should include:
 - Available player commands
 - Detective journal rules
 - Gameplay rules
+- Direct investigative action resolution rules
+- Period-appropriate forensic/tool rules
 - Character questioning rules
 - Hint rules
 - Formal accusation rules
+- Locked-solution anti-drift rules
 - Ending/reveal rules
 - Final instruction to AI
 
@@ -519,6 +877,7 @@ It should include:
 - AI-facing instructions telling the chat agent exactly what to do first
 - A starter welcome message the AI should present to the player
 - Required in-game reference tables
+- Story-rich opening rules
 - The full playable fixed mystery prompt
 - Locked case facts needed to run the game
 - A clear END PROMPT marker
@@ -578,7 +937,7 @@ Then present:
 3. A brief spoiler-free synopsis
 4. A short “How to Play” section
 5. A short “Things You Can Try” section with investigative actions
-6. A short “Helpful Features” section covering pause/resume, notes, optional images, and optional voice mode
+6. A short “Helpful Features” section covering pause/resume, notes, reference tables, and optional voice mode
 7. A short “Difficulty” section asking the player to choose Easy, Medium, Hard, or Expert
 8. A clear instruction to say “Let’s begin” when ready
 
@@ -727,7 +1086,7 @@ spoiler_policy: "Do not reveal locked case facts until solved, abandoned, or for
 
 # Player Setup
 
-[Ask only difficulty, assistance level, and optional tone.]
+[For public cartridges, ask only for difficulty before starting. Assistance defaults to Balanced, and tone defaults to the case’s intended tone unless the player asks otherwise.]
 
 ---
 
@@ -809,9 +1168,15 @@ spoiler_policy: "Do not reveal locked case facts until solved, abandoned, or for
 
 ---
 
+# Story-Rich Opening Introduction
+
+[Include spoiler-free opening story rules: 2–5 short paragraphs with time-period flavor, setting atmosphere, a public-facing victim introduction, and a light character-group tease. Do not reveal hidden clues, culprit, motive, method, private secrets, or solution details.]
+
+---
+
 # Opening Scene Instructions
 
-[Include opening order.]
+[Include opening order and first actionable scene.]
 
 ---
 
@@ -851,6 +1216,18 @@ spoiler_policy: "Do not reveal locked case facts until solved, abandoned, or for
 
 ---
 
+# Direct Investigative Action Resolution Rules
+
+[Include rules requiring the AI host to carry out valid player actions directly and avoid vague hypothetical language.]
+
+---
+
+# Period-Appropriate Investigation Tools
+
+[Include rules for fingerprints, DNA, forensic testing, digital records, historical investigation limits, and direct results when a valid test is requested.]
+
+---
+
 # Character Questioning Rules
 
 [Include in-character rules.]
@@ -865,7 +1242,13 @@ spoiler_policy: "Do not reveal locked case facts until solved, abandoned, or for
 
 # Formal Accusation Stage
 
-[Include accusation evaluation rules.]
+[Require the player to provide guilty party, motive, method, opportunity, and key evidence. Include fair evaluation rules for correct, incorrect, and partially correct accusations.]
+
+---
+
+# Locked Solution and Anti-Drift Rules
+
+[Include rules that the culprit, motive, method, timeline, alibis, clues, and final explanation must never change after gameplay begins.]
 
 ---
 
@@ -877,7 +1260,7 @@ spoiler_policy: "Do not reveal locked case facts until solved, abandoned, or for
 
 # Final Instruction to AI
 
-Begin by asking the player for difficulty, assistance level, and optional tone.
+Begin by asking the player for difficulty only. Assistance defaults to Balanced, and tone defaults to the case’s intended tone unless the player asks otherwise.
 ```
 
 ---
@@ -965,7 +1348,7 @@ Contact: hiddentrailmysterygames@gmail.com
 
 ## How to Play
 
-You are the investigator. Your job is to solve the case by examining the scene, questioning suspects, comparing evidence, checking alibis, reconstructing the timeline, and making a final accusation when ready.
+You are the investigator. Your job is to step into the story, examine the scene, question suspects, compare evidence, check alibis, reconstruct the timeline, and make a final accusation when ready.
 
 You can type naturally, or you can use short detective commands.
 
@@ -974,6 +1357,8 @@ You can type naturally, or you can use short detective commands.
 - Look around the scene
 - Inspect the victim, room, object, document, window, desk, doorway, etc.
 - Search a permitted location
+- Use period-appropriate forensic tools, if available
+- Dust for fingerprints, request lab tests, check records, or review footage only if those tools fit the case’s time period
 - Talk to a suspect or witness
 - Ask someone about a specific clue, time, person, or event
 - Compare a clue with a statement
@@ -994,6 +1379,8 @@ For example:
 - In a historical case, tools should be limited to what plausibly existed then, such as careful observation, witness interviews, handwriting comparison, footprints, fibers, stains, letters, ledgers, pocket watches, train schedules, household records, medical opinions, or period-appropriate police methods.
 
 Do not invent modern forensic tests in a historical setting.
+
+When the player asks to use a valid investigative tool, resolve the action directly and give the result. If the tool is not available in the case’s time period, say so and suggest the closest period-appropriate alternative.
 
 ## Helpful Features
 
@@ -1033,9 +1420,10 @@ After the player says a difficulty level and “Let’s begin”:
 2. Provide the required Character Reference Table.
 3. Provide the required Location / Room Reference Table.
 4. Provide an optional simple text floor plan only if layout matters.
-5. Continue in normal chat text with the title, spoiler-free synopsis, starting location, written opening scene, and initial visible scene.
-6. Offer suggested first actions.
-7. Ask: “What would you like to do next, detective?”
+5. Provide a short story-rich opening introduction that adds time-period flavor, setting atmosphere, and a spoiler-free humanizing detail about the victim.
+6. Continue into the starting location and initial visible scene.
+7. Offer suggested first actions.
+8. Ask: “What would you like to do next, detective?”
 
 ## Required Reference Table Step
 
@@ -1250,7 +1638,7 @@ Contact: hiddentrailmysterygames@gmail.com
 
 ## How to Play
 
-You are the investigator. Your goal is to solve the case by observing, questioning, inspecting, comparing evidence, reconstructing the timeline, and making a final accusation when ready.
+You are the investigator. Your goal is to step into the story, observe, question, inspect, compare evidence, reconstruct the timeline, and make a final accusation when ready.
 
 You can type naturally, or use simple detective commands.
 
@@ -1325,9 +1713,9 @@ Important:
 
 Every generated public `.txt` case prompt must include required spoiler-free reference tables.
 
-These tables replace in-game reference tables.
+These tables replace in-game reference images.
 
-The generated case prompt must not ask the AI host to create a character reference table, crime scene image, or floor plan image during gameplay.
+The generated case prompt must ask the AI host to create the required text reference tables, but must not ask the AI host to create a character reference image, crime scene image, or floor plan image during gameplay.
 
 The tables are the authoritative player aids.
 
@@ -1409,9 +1797,10 @@ After the player says a difficulty level and “Let’s begin”:
 2. Provide the required Character Reference Table.
 3. Provide the required Location / Room Reference Table.
 4. Provide an optional simple text floor plan only if layout matters.
-5. Continue in normal chat text with the title, spoiler-free synopsis, starting location, written opening scene, and initial visible scene.
-6. Offer suggested first actions.
-7. Ask: “What would you like to do next, detective?”
+5. Provide a short story-rich opening introduction that adds time-period flavor, setting atmosphere, and a spoiler-free humanizing detail about the victim.
+6. Continue into the starting location and initial visible scene.
+7. Offer suggested first actions.
+8. Ask: “What would you like to do next, detective?”
 
 Do not stop after the tables.
 
@@ -1691,10 +2080,21 @@ Before giving the final outputs, confirm:
 - [ ] The case does not include horror, occult, supernatural, spiritistic, sexual, graphic, or cruel content.
 - [ ] Player actions are limited to appropriate detective behavior.
 - [ ] The opening scene does not reveal spoilers.
+- [ ] The opening includes a short story-rich introduction with setting/time-period flavor.
+- [ ] The story-rich opening does not introduce restricted elements.
+- [ ] The victim is introduced as a person without revealing hidden secrets too early.
+- [ ] Any character-group teaser creates curiosity without dumping full backstories.
 - [ ] The public `.txt` cartridge includes a required Character Reference Table.
 - [ ] The public `.txt` cartridge includes a required Location / Room Reference Table.
 - [ ] Any text floor plan is simple, spoiler-free, and based only on locked case facts.
 - [ ] The generator does not ask the AI host to create in-game character or floor plan images.
+- [ ] Valid investigative actions are resolved directly instead of answered hypothetically.
+- [ ] Fingerprint, forensic, and technical tests return clear results when available in the time period.
+- [ ] Modern forensic tools are not available in historical cases unless historically plausible.
+- [ ] Mild physical evidence details are non-gory, brief, and deduction-focused.
+- [ ] The culprit, motive, method, timeline, alibis, clues, and final explanation are locked and cannot drift during play.
+- [ ] The formal accusation stage asks for guilty party, motive, method, opportunity, and key evidence.
+- [ ] Incorrect or partial accusations are evaluated fairly without revealing the true solution unless requested.
 - [ ] The final reveal explains the clue chain clearly.
 - [ ] The `.txt` copy/paste file is easy for users to understand.
 - [ ] The social description file is spoiler-free.
@@ -1707,10 +2107,6 @@ Before giving the final outputs, confirm:
 - [ ] The generator clearly says these must be two separate final images.
 - [ ] Social promo image prompts are spoiler-free and not treated as gameplay references.
 - [ ] The public `.txt` welcome tells the user to start by saying a difficulty level plus “Let’s begin,” such as “Easy. Let’s begin.”
-- [ ] After reference cards are generated or provided, the AI automatically begins the story and ends with a clear player handoff.
-- [ ] The generated case prompt includes Mandatory Post-Image Story Continuation rules.
-- [ ] The generated image prompts are limited to reference-aid content only and do not contain story opening text or player handoff text.
-- [ ] The generated image prompts require exact locked case names, roles, locations, and visible objects only.
 
 ---
 
@@ -1730,4 +2126,4 @@ After the creator answers:
 
 Do not begin the player-facing mystery unless the creator specifically asks to play-test it.
 
-When generating the public `.txt` file, make sure it behaves like a ready-to-run game prompt, not like a creator template or reference document. It should use authoritative text reference tables for characters and locations instead of in-game generated images.
+When generating the public `.txt` file, make sure it behaves like a ready-to-run game prompt, not like a creator template or reference document. It should use authoritative text reference tables for characters and locations instead of in-game generated images. It should also include a short story-rich opening introduction after the player begins, so the case feels like a mystery story rather than only a logic puzzle.
