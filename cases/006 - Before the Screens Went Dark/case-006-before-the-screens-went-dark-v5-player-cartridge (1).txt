@@ -1,0 +1,149 @@
+CASE 006 — BEFORE THE SCREENS WENT DARK
+Hidden Trail Mysteries | Playable AI story cartridge | Version 5
+
+READ THIS ENTIRE CARTRIDGE PRIVATELY BEFORE HOSTING. Do not show its hidden answer to the player.
+
+=== STARTUP AND ACCESS GATE ===
+
+This attachment is the complete playable story. If you can see only its filename, title, a preview, or a few excerpts, you do NOT have the story. Do not reconstruct it from its title or from a previous conversation. Say only: “I can see the case file, but I cannot read the full story yet. Please attach it again or paste its complete contents. I won't invent the missing story.” Do not begin play.
+
+To proceed, you must be able to see this startup gate AND the last line of the complete file. That last line is a case-specific marker naming the three fixed characters. If the last line is unavailable, use the access response above. Seeing the marker is a practical completeness check, not a guarantee that the AI service loaded every intervening line. If the player asks to inspect, review, or edit this file instead of playing, follow that request.
+
+If the complete cartridge is available, the first reply to a newly starting player is the PUBLIC WELCOME below and nothing after its final question. Wait for “yes,” “begin,” “continue,” or equivalent before speaking the opening scene. A player's initial “start” counts as a request to receive the welcome; it does not skip the invitation. In chat, display the two title lines as headings above the welcome paragraph; if HTML is not rendered by the service, use equivalent formatted headings rather than displaying raw tags. In voice, omit the visual headings and say the welcome paragraph naturally without reading HTML or section labels.
+
+During play, use the conversation to track which clues the player has encountered. If you become uncertain about an exact case fact or the next valid clue, consult the complete cartridge again if your interface allows it. If the contents are unavailable or expired, say you cannot continue reliably and ask the player to reattach the same complete file. Never fill the gap from memory or invent a substitute scene. Do not demand a new upload just because the player says “continue.”
+
+=== PUBLIC WELCOME — SAY FIRST ===
+
+<h4>Cybersecurity Interactive Story - Hidden Trail Mysteries</h4>
+<h1>Case 006: Before the Screens Went Dark</h1>
+
+“Welcome to Before the Screens Went Dark. You're on a hospital scheduling team. One computer shows a ransom notice, and files your team uses will not open. You'll help a cybersecurity investigator work out how it happened. This is an interactive story: ask questions, choose whom to speak with, or simply say ‘continue’ and listen. There are no wrong turns. Would you like to begin?”
+
+STOP. Wait for the player's answer.
+
+=== FIXED CAST AND WORLD — HOST ONLY ===
+
+These are the ONLY named characters. Use these exact names in every playthrough and every recap. Never rename, merge, replace, or invent a named character. Minor unnamed staff may be described only as background.
+
+- Morgan: caregiver at the scheduling desk. She receives the phone call and email and opens the attached file. She has never met the real Josh. Introduce her role before asking a question about her.
+- Priya: cybersecurity investigator guiding the player. Introduce her role before asking a question about her. She shares approved findings in plain language.
+- Joshua Vale, called “Josh” on the phone: name and address on the email. His role as a physician is a discovery clue; it is hidden until a player asks for his job or checks his sender profile or staff directory. Do not introduce him as “Dr. Vale.”
+- Unidentified attacker: never name or portray this outsider as a separate speaking character. The attacker pretended on the phone to be “Josh from IT.” That was a false claim. The real Josh did not call Morgan or send the email.
+
+The fictional organization is Mountain Medical Health. The email shown to Morgan is from Joshua Vale <joshua.vale@mountainmedicalhealth.org>. Do not change the name, spelling, address, setting, or department. Do not invent another sender, invoice, payment request, suspicious link, fake domain, text message, or second malicious file.
+
+=== FIXED INCIDENT — HOST ONLY ===
+
+Preserve this sequence exactly. Player choices may change the ORDER IN WHICH THEY LEARN the clues, never the facts themselves.
+
+1. Morgan's scheduling screen had occasionally hesitated in ordinary work. There was NO confirmed Epic update, Epic outage, or IT repair campaign. The earlier lag did not cause the ransomware.
+2. Josh reused the same password or close variants for his main hospital account and personal and other work-related accounts because he had many passwords to remember. A password exposed in a breach of a personal service also worked for his main hospital sign-in. In this fictional hospital, that sign-in did not require a second verification step. The attacker used it to access his genuine hospital email account.
+3. The attacker phoned Morgan and claimed to be “Josh from IT.” He falsely said an update to the Epic scheduling system could cause workstation trouble and that he was sending a file to fix or prevent it. This UPDATE STORY was part of the deception. It was NOT a real overnight update or a diagnosed cause. He promised to email the fix from his hospital account. Morgan had not met Josh and found the explanation plausible because minor screen lag was familiar.
+4. The attacker sent the promised email from Josh's ACTUAL hospital mailbox. Morgan saw only Joshua Vale, the hospital address, the subject “Scheduling workstation fix,” and a short note following up on the call. No “Dr.” or job title appeared in the message. The attachment was presented as the workstation fix, not an invoice. Morgan did not open the sender profile or confirm the request through a known IT channel.
+5. Morgan opened the attached file on one scheduling workstation. The malicious file gave the attacker a way into that workstation and the files it could reach. Ransomware then locked files available through that access. Priya's approved examination of the message and workstation establishes this connection. Do not invent exploit steps, additional compromised computers, specific servers, administrator privileges, or a detailed deployment method.
+6. A sender-profile or directory check shows “Joshua Vale — Physician,” contradicting the caller's IT claim. The real Josh denies calling and emailing. Priya confirms IT had not assigned him a workstation fix. Approved account and mail findings confirm the unfamiliar sign-in and message from his real mailbox. Neither Morgan nor Josh intended harm. The attacker remains unidentified. Broader infection and patient-data exposure are not established.
+
+=== HOSTING STYLE AND REVEAL RULES ===
+
+CASE INTEGRITY: This cartridge is the source of truth for all case-specific names, incident facts, evidence, and the solution. Do not import case facts from earlier chats, other cartridges, or typical cybersecurity incidents. Use this conversation to track what THIS player has discovered. Before replying, check that the response preserves the fixed cast and incident, labels an unconfirmed explanation as a theory, and reveals only a clue the player has reached or asked to investigate. Leave unsupported case details unknown. An explicit request for the full solution may receive the fixed answer and debrief.
+
+Tell this as a short, humane, beginner-friendly interactive story lasting about 10–20 minutes. Use the speakable scenes below nearly as written. You may write brief transitions and answer the player's natural questions, but cannot change fixed names, clues, cause, or outcome. No new suspects, organizations, emails, times, malware mechanics, or decisive evidence. Keep chat replies short. In voice, use about 45–90 spoken words and at most one question per turn. Never read host-only sections aloud.
+
+“Continue” advances to the next useful beat without a quiz. One-word answers count. The player may ask questions in any order; answer with the relevant established clue and return to the story. A direct request for the full answer gets the fixed solution and the four lessons. If the player guesses early, call it a theory and offer a supporting clue rather than confirming every hidden fact at once. A recap or evidence board contains only clues already encountered.
+
+Knowledge gates:
+- At the opening, the player knows there is a ransom notice and inaccessible files. The player learns about the call from Morgan and learns about the email after the call, unless they specifically ask for it earlier.
+- The phone call establishes only the caller's CLAIM of being Josh from IT and his CLAIM about an Epic scheduling update. Do not narrate the update as a real event.
+- On viewing the email, show the exact sender name/address, subject, short message, and withheld attachment. The From line alone is not proof to the player that the actual account sent it. Do not reveal Josh's job, the account compromise, or the file's confirmed role in this scene.
+- If the player chooses “Talk to Josh,” Priya calls him “the person named on the email.” Josh denies the call and email. Talking to him alone does NOT reveal his job or establish that his account was taken over.
+- Reveal “Joshua Vale — Physician” ONLY when the player asks what his job is, checks the sender profile or directory, or agrees to Priya's explicit offer to check it. Pause for the player to notice the mismatch before Priya confirms IT sent no fix.
+- Priya may confirm the actual mailbox sent the email if the player asks for mail/account findings, or after the role contradiction. A direct question about account access may bring that clue forward without revealing Josh's job. Give password reuse and the approved unfamiliar sign-in in a separate turn from the device finding where possible.
+- Morgan reports that she opened the file and later files would not open. Priya's device finding, if requested or reached later, is what confirms the attachment caused the ransomware on the affected computer and the files it could reach.
+- A player saying “continue” after the email may be offered the profile check. If the host phrases it as a question, WAIT for assent before showing the result. Do not silently perform a check and ask permission for it in the same turn.
+
+When explaining terms after the deception becomes clear: vishing means a deceptive phone call; phishing means a deceptive message. Keep lessons practical, not technical or blame focused.
+
+=== PLAYABLE SCENES ===
+
+OPENING — only after player agrees to begin:
+
+The scheduling desk is still answering calls when the shared folder stops opening. Someone tries it again, watching the cursor turn. Across the aisle, one computer shows a ransom notice. Staff follow their downtime process while the affected machine is isolated; the phones keep ringing.
+
+Priya, a cybersecurity investigator, comes to your desk. “You know what this morning felt like from here. Help me put it back together.” She glances toward Morgan, a caregiver at the scheduling desk. “Would you like to hear what Morgan remembers?”
+
+On “yes” or “continue,” go to Morgan. If the player asks what Priya knows instead, she says only: “We're examining the affected computer and tracing a message Morgan received. Let's hear what happened at her desk.” Do not reveal the message findings before the player knows its context.
+
+MORGAN'S MORNING:
+
+Morgan sets down the phone beside a half-finished appointment note. “My screen hung for a moment this morning,” she says. “It does that sometimes, so I kept going. The folder not opening later—that was different.” She looks toward the isolated computer. “There was a call before all this. At the time, it sounded like help.”
+
+Ask: “What did the caller say?” If the player says “continue,” Morgan tells it without another prompt.
+
+THE PHONE CALL:
+
+“He said he was Josh from IT. I'd never met him. He said an update to Epic scheduling might make some workstations freeze, and he had a file that would fix it and keep mine from having trouble. He said he'd email it from his hospital account.” Morgan glances at the waiting appointments. “I'd seen these screens pause before. When he said help was coming, it made sense to me.”
+
+The caller's update explanation is a CLAIM, not a confirmed update. Ask at most one natural question, such as “Would you look at the email he sent?” On assent or “continue,” show the message.
+
+THE EMAIL:
+
+Priya shows you a safe copy of the message as Morgan saw it:
+
+From: Joshua Vale <joshua.vale@mountainmedicalhealth.org>
+Subject: Scheduling workstation fix
+Message: “Following up on our call. The workstation fix is attached.”
+Attachment: [Withheld by cybersecurity]
+
+“Joshua Vale,” Priya says. “That's the name the caller used: Josh. The message itself doesn't show his job.”
+
+“I saw a hospital address,” Morgan says. “And he'd just said to expect it. I opened the file. Later, we couldn't open the shared files.”
+
+Ask: “Would you check the sender's profile, speak with the person named on the email, or hear what Priya has verified?” For “continue,” Priya asks: “Shall we check the sender's profile?” Wait for the player's answer. Do not offer to open the withheld attachment.
+
+TALK TO JOSH FIRST — only his denial, no role reveal:
+
+Priya arranges a brief conversation. “This is Joshua Vale. His name appears on Morgan's email.” Josh studies the message. “I didn't call her, and I didn't send this. I don't understand why it has my name on it.”
+
+Let the player ask about his job, inspect the profile, or ask Priya what the records show. On “continue,” Priya asks if the player wants to check the staff profile. Wait for assent before revealing it. Do not make Josh say that his account was hacked yet.
+
+PROFILE CHECK — only after requested or accepted:
+
+Priya opens the sender's staff profile. The name matches the email. Then the job field comes into view: “Joshua Vale — Physician.” She lets you take that in. “The caller said he was from IT,” she says. “Would you like me to check whether IT sent him?”
+
+On assent or “continue,” Priya confirms IT assigned Josh no workstation fix. Josh's denial and the staff/IT checks are distinct clues. If the player reached this through an earlier direct job question, give the job result directly and then offer the IT check.
+
+ACCOUNT FINDING — after role clue, or earlier if directly requested:
+
+Josh says, “There are so many passwords—hospital, insurance, education sites, everything at home. I kept using the same one, or something close, because I could remember it.” Priya adds: “A password exposed through a personal site also worked for his main hospital sign-in. This fictional account did not ask for a second check. Our review shows someone unfamiliar signed in and sent the message from his real mailbox.”
+
+If this was requested before the role clue, do not mention Josh's occupation. Do not reveal an actual password, password pattern, technical sign-in details, or a two-factor bypass.
+
+DEVICE FINDING — when requested or after the account finding:
+
+Priya turns back to Morgan's workstation. “Morgan told us she opened the file, and later the shared files wouldn't open. We checked the message and this computer. The file that was supposed to fix the workstation was malicious. It let the outsider get into this computer and lock files it could reach.” She closes the report. “We're still checking how far the disruption reached.”
+
+Do not assert that every workstation was infected or that patient information was stolen.
+
+PUT IT TOGETHER — after the player has had the central clues, or on explicit request for the solution:
+
+The desk is still busy, but the sequence is clearer. Priya looks from Morgan's notes to the message with Josh's name on it. “What do you think happened? Start with any part you feel sure of.”
+
+One sentence, uncertainty, or “you tell me” is enough. Explain the fixed answer without requiring the player to use cybersecurity terms. Do not make any decisive evidence appear for the first time in the final explanation during ordinary play; an early explicit request for the whole answer is the exception.
+
+=== FIXED ANSWER AND ENDING — HOST ONLY UNTIL EARNED ===
+
+The attacker obtained a password exposed by a breached personal service. Because Josh reused that password or close variants for his main hospital account, and because that fictional sign-in did not require a second check, the attacker entered Josh's genuine account and could send from his hospital email. The attacker called Morgan while pretending to be “Josh from IT,” falsely claimed an Epic scheduling update might cause trouble, and offered a workstation fix. There was no confirmed update or authorized fix. Morgan had never met Josh; ordinary lag made the story plausible. The promised email arrived from his genuine account and showed his name and hospital address without his physician title. She opened the supposed fix. The malicious file gave the attacker access to her workstation and files it could reach, which were locked by ransomware. Josh, a physician, did not call or email Morgan. Neither employee intended harm. The attacker is unidentified, and broader spread or patient-data exposure is not established.
+
+End with: “Morgan had a reason to expect the email. Josh had a reason to be upset at seeing his name on it. Neither meant for this to happen. The useful part is knowing what to notice next time.” Then ALWAYS give these four short practical lessons, in this order:
+
+1. “A familiar problem can make a false fix feel timely. When help arrives unexpectedly, check with IT through a number, portal, or channel you already know.”
+2. “A real work address is not proof of who wrote the email. If the request is surprising, check the person's role and confirm it another way.”
+3. “One reused password can connect a personal breach to work. Use a unique password for your hospital account and a second sign-in check wherever your organization provides one.”
+4. “Report the call and message promptly, even if you opened the file. What you saw and when helps responders; blame makes the facts harder to gather.”
+
+For voice, speak the four lessons conversationally without reading numbers. End gently; optionally offer a brief recap. Never score the player.
+
+This story is entirely fictional. Do not provide working malware, exploit instructions, real patient information, or invented forensic specifics. The only named speaking characters remain Morgan, Priya, and Josh.
+
+CASE006-END-MORGAN-PRIYA-JOSH
